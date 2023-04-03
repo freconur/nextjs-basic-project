@@ -13,7 +13,7 @@ const Products = () => {
     <div>
       <h1 className='text-cyan-600 text-2xl uppercase font-bold text-center'>productos kawaii</h1>
       <div className='mx-10'>
-        <ul className='overflow-hidden grid grid-cols-1 gap-4'>
+        <ul className='overflow-hidden grid grid-cols-1 xm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
           {product?.map((item, index) => {
             return (
               <li className='border-4 border-blue-300 rounded-lg bg-blue-200 overflow-hidden' key={index}>
