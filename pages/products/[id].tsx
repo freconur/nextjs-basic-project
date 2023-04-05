@@ -19,13 +19,17 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return { props: { product } }
 }
 
-const ProductDetails = ({product}:{product:Kawaii}) => {
+const ProductDetails = ({ product }: { product: Kawaii }) => {
     console.log('product', product)
     return (
-        <div>
-            holis
-            <p>{product?.name}</p>
-            <p>{product?.marca}</p>
+        <div className='bg-blue-100 shadow p-5 m-10 rounded-lg flex border-2'>
+            <div className='mr-3'>
+                <p>{product?.name}</p>
+                <p>{product?.marca}</p>
+            </div>
+            <div className='w-full'>
+                <img className='w-full' src={product?.image} alt="" />
+            </div>
         </div>
     )
 }
