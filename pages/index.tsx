@@ -3,6 +3,7 @@ import React, { useEffect, useReducer } from 'react'
 import { ProductsReucer, productInitialState } from 'reducer/Products.reducer'
 import { getKawaiiProducts, kawaiiProductById } from 'reducer/kawaii'
 import { GetStaticProps } from 'next'
+import SectionBts from '@components/SectionBts/SectionBts'
 
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -16,9 +17,9 @@ console.log('json',JSON.parse(JSON.stringify(product)))
 
   return (
     <div>
-      <h1 className='text-cyan-600 text-2xl uppercase font-bold text-center'>productos kawaii</h1>
-      <div className='mx-10'>
-        <Products products={product} />
+      <div className='mx-5'>
+        <SectionBts/>
+        {/* <Products products={product} /> */}
       </div>
     </div>
   )

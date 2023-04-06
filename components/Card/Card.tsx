@@ -14,7 +14,7 @@ const Card = ({ name, id, marca, image, price }: Props) => {
   return (
     <li className='border-4 border-blue-300 rounded-lg bg-blue-200 overflow-hidden'>
       {image && name &&
-        <Image src={image} width={300} height={300} alt={name}/>
+        <Image src={image} width={500} height={500} alt={name}/>
       }
       <div className='px-2'>
         <h2>{name}</h2>
