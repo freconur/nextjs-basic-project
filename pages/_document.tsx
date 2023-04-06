@@ -12,6 +12,7 @@ class MyDocument extends Document {
         </Head>
         <body className="my-body-class">
           <Main />
+          <div id="portal-navbar"></div>
           <NextScript />
         </body>
       </Html>

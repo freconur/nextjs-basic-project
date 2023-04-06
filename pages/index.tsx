@@ -1,4 +1,4 @@
-import Products from '@components/Products/Products'
+import Products from 'components/Products/Products'
 import React, { useEffect, useReducer } from 'react'
 import { ProductsReucer, productInitialState } from 'reducer/Products.reducer'
 import { getKawaiiProducts, kawaiiProductById } from 'reducer/kawaii'
