@@ -4,6 +4,8 @@ import { ProductsReucer, productInitialState } from 'reducer/Products.reducer'
 import { getKawaiiProducts, kawaiiProductById } from 'reducer/kawaii'
 import { GetStaticProps } from 'next'
 import SectionBts from '@components/SectionBts/SectionBts'
+import SectionKawaii from '@components/SectionKawaii/SectionKawaii'
+import SectionContact from '@components/SectionContact/SectionContact'
 
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -17,8 +19,10 @@ console.log('json',JSON.parse(JSON.stringify(product)))
 
   return (
     <div>
-      <div className='mx-5'>
+      <div className=''>
         <SectionBts/>
+        <SectionKawaii/>
+        <SectionContact/>
         {/* <Products products={product} /> */}
       </div>
     </div>
