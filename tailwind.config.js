@@ -32,7 +32,7 @@ module.exports = {
         'fuxia':'#eb179e',
         'texto': 'rgb(75 85 99)',
         'whatsapp': '#32bb46',
-        
+        'footer':'rgb(34,34,34)'
       },
     },
     variants: {

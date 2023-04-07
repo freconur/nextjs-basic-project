@@ -5,7 +5,7 @@ import { RiInstagramLine } from "react-icons/ri";
 import { RiYoutubeLine } from "react-icons/ri";
 const SectionContact = () => {
   return (
-    <section className="bg-cian py-10 px-3">
+    <section className="bg-cian rounded-t-3xl py-10 px-3">
       <div className="flex">
         <div className="m-auto">
           <Image
