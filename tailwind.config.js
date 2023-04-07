@@ -31,6 +31,8 @@ module.exports = {
         'fondo-body': '#f9f9f9',
         'fuxia':'#eb179e',
         'texto': 'rgb(75 85 99)',
+        'whatsapp': '#32bb46',
+        
       },
     },
     variants: {
