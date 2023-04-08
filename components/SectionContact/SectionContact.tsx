@@ -32,7 +32,7 @@ const SectionContact = () => {
               <h3 className=" text-2xl text-gray-600 font-semibold capitalize">
                 ubicanos
               </h3>
-              <p className="text-white font-semibold pt-2 text-center">
+              <p className="text-white pt-2 text-center">
                 Nos ubicamos en jiron La Custre con Jiron Conima, a una cuadra
                 de la Avenida Tambopata con jiron Conima.
               </p>
@@ -43,7 +43,7 @@ const SectionContact = () => {
               </h3>
 
               {/* <p className="text-white font-semibold block sm:flex jutify-center items-center pt-2"> */}
-              <p className="text-white font-semibold flex justify-center items-center pt-2">
+              <p className="text-white  flex justify-center items-center pt-2">
                 <RiPushpin2Line className="mx-2 font-semibold text-2xl" />
                 Mz i Lote 2 Jiron Conima.
               </p>
@@ -67,7 +67,7 @@ const SectionContact = () => {
             <div className="flex gap-2 w-full mx-auto">
               <div className=" flex gap-2 m-auto h-[70px] justify-center items-center">
                 <RiWhatsappLine className="text-white text-4xl" />
-                <p className="block lg:text-2xl  text-white text-2xl font-bold">
+                <p className="block lg:text-2xl  text-white text-2xl font-semibold">
                   +51 936 263 748
                 </p>
               </div>
