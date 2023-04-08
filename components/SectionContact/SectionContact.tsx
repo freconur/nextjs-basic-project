@@ -6,7 +6,7 @@ import { RiYoutubeLine } from "react-icons/ri";
 import { RiPushpin2Line } from "react-icons/ri";
 const SectionContact = () => {
   return (
-    <section className="bg-cian rounded-3xl py-10 px-3">
+    <section className="bg-cian rounded-t-3xl py-10 px-3">
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center">
           <Image
@@ -67,7 +67,7 @@ const SectionContact = () => {
             <div className="flex gap-2 w-full mx-auto">
               <div className=" flex gap-2 m-auto h-[70px] justify-center items-center">
                 <RiWhatsappLine className="text-white text-4xl" />
-                <p className="block lg:text-2xl  text-white text-2xl font-semibold">
+                <p className="block lg:text-2xl  text-white text-2xl">
                   +51 936 263 748
                 </p>
               </div>
