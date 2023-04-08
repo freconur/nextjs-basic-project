@@ -6,7 +6,7 @@ import { GetStaticProps } from 'next'
 import SectionBts from '@components/SectionBts/SectionBts'
 import SectionKawaii from '@components/SectionKawaii/SectionKawaii'
 import SectionContact from '@components/SectionContact/SectionContact'
-import Slider from '@components/Slider/Slider'
+import Slide from '@components/Slider/Slide'
 
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -21,7 +21,7 @@ console.log('json',JSON.parse(JSON.stringify(product)))
   return (
     <div>
       <div className=''>
-        <Slider/>
+        <Slide/>
         <SectionBts/>
         <SectionKawaii/>
         <SectionContact/>
