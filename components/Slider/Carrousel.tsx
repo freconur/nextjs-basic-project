@@ -26,7 +26,7 @@ const Carrousel = ({ children: slides, autoSlide=false }: PropsCarrousel) => {
         >
           {slides}
         </div>
-        <div className="absolute inset-0 flex items-center justify-between">
+        <div className="absolute inset-0 flex items-center justify-between p-4">
           <button
             onClick={prev}
             className="rounded-full rotate-90 bg-gray-100 hover:bg-white"
