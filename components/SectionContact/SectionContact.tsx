@@ -6,7 +6,7 @@ import { RiYoutubeLine } from "react-icons/ri";
 import { RiPushpin2Line } from "react-icons/ri";
 const SectionContact = () => {
   return (
-    <section className="bg-cian rounded-t-3xl py-10 px-3">
+    <section className="bg-cian rounded-3xl py-10 px-3">
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center">
           <Image
@@ -17,7 +17,7 @@ const SectionContact = () => {
           />
         </div>
         <div className="m-3">
-          <p className="text-gray-600 text-3xl font-semibold capitalize">
+          <p className="text-gray-600 text-2xl font-semibold capitalize">
             waliky store Juliaca
           </p>
           <p className="text-gray-500 text-xl capitalize">
@@ -29,7 +29,7 @@ const SectionContact = () => {
         <div className="cs:flex cs:justify-center cs:items-center cs:mt-10 lg:gap-10">
           <div className="grid py-10 grid-cols-1 sm:grid-cols-2 cs:grid-cols-1 cs:w-[500px] cs:place gap-4 text-center">
             <div className="text-xl px-2">
-              <h3 className=" text-3xl text-gray-600 font-semibold capitalize">
+              <h3 className=" text-2xl text-gray-600 font-semibold capitalize">
                 ubicanos
               </h3>
               <p className="text-white font-semibold pt-2 text-center">
@@ -38,7 +38,7 @@ const SectionContact = () => {
               </p>
             </div>
             <div className="text-xl px-2 ">
-              <h3 className=" text-3xl text-gray-600 font-semibold capitalize">
+              <h3 className=" text-2xl text-gray-600 font-semibold capitalize">
                 direccion
               </h3>
 
@@ -61,7 +61,7 @@ const SectionContact = () => {
         </div>
         <div className="block sm:flex justify-center items-center gap-10 pt-14 lg:w-[300px] lg:block">
           <div className="text-center pt-5 lg:pt-0">
-            <h3 className="text-gray-600 text-3xl font-semibold capitalize ">
+            <h3 className="text-gray-600 text-2xl font-semibold capitalize ">
               contactanos
             </h3>
             <div className="flex gap-2 w-full mx-auto">
@@ -74,7 +74,7 @@ const SectionContact = () => {
             </div>
           </div>
           <div className="text-center pt-5 lg:pt-[20px]">
-            <h3 className="text-gray-600 text-3xl font-semibold capitalize">
+            <h3 className="text-gray-600 text-2xl font-semibold capitalize">
               redes sociales
             </h3>
             <div className="flex gap-2 ">
