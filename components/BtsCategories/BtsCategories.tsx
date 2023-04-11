@@ -68,7 +68,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
         <div className="p-3 grid place-content-center">
           <h3 className="text-2xl text-fuxia capitalize font-bold text-center">polos</h3>
           <div className="block text-texto">
-            poster bts para tu cuarto pa ponerte en cuatro
+            poster bts para tu cuarto pa ponerte en cuatro holi
           </div>
         </div>
       </li>
