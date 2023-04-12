@@ -1,26 +1,25 @@
 import LayoutBts from '@components/Layout/LayoutBts'
 import ProductsCard from '@components/ProductsCard/ProductsCard'
 import React, { useEffect, useReducer } from 'react'
-import { getPosterBts } from 'reducer/Bts'
+import { getCojinesBts, getCojinesMidBts, getMediasBts } from 'reducer/Bts'
 import { ProductsReducer, productInitialState } from 'reducer/Products.reducer'
 
-const PosterBts = () => {
+const MediasBts = () => {
 const [state, dispatch] = useReducer(ProductsReducer,productInitialState)
-const { posterBts } = state
-console.log('posterBts', posterBts)
+const { mediasBts } = state
   useEffect(() => {
-    getPosterBts(dispatch)
+    getMediasBts(dispatch)
   },[])
   return (
     <LayoutBts>
       <div className='text-2xl text-gray-500'>
         {
-          posterBts &&
-        <ProductsCard productsBts={posterBts} />
+          mediasBts &&
+        <ProductsCard productsBts={mediasBts} />
         }
       </div>
     </LayoutBts>
   )
 }
 
-export default PosterBts
+export default MediasBts

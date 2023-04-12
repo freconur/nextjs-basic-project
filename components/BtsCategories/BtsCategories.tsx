@@ -57,7 +57,8 @@ const BtsCategories = ({ btsCategories }: Props) => {
           </div>
         </div>
       </li>
-      <li className="flex flex-row-reverse w-full rounded-xl shadow-md p-5 bg-blanco-cool">
+      <li className="flex  w-full rounded-xl shadow-md p-5 bg-blanco-cool">
+      <Link className="flex flex-row-reverse p-5" href="bts/tazas">
         <img className="rounded-full max-w-[150px]" src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Ftazas%2Ftaza-bts-butter.jpg?alt=media&token=b262c0d0-4b02-4326-b9cf-ef08466b4570" alt="tazas bts" />
         <div className="p-3 grid place-content-center">
           <h3 className="text-2xl text-fuxia capitalize font-bold text-center">tazas</h3>
@@ -65,6 +66,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
             poster bts para tu cuarto pa ponerte en cuatro
           </div>
         </div>
+        </Link>
       </li>
       <li className="flex w-full rounded-xl shadow-md p-5 bg-blanco-cool">
         <img className="rounded-full max-w-[150px]" src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fpolos%2Fpolo-bts-mujer-3.jpg?alt=media&token=763fb062-f7da-45ee-bf50-8c0ea79e473d" alt="polos bts" />

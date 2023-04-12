@@ -2,12 +2,12 @@ import React from 'react'
 
 
 type Props = {
-	posterBts: Products[]
+	productsBts: Products[]
 }
-const ProductsCard = ({ posterBts }: Props) => {
+const ProductsCard = ({ productsBts }: Props) => {
 	return (
 		<ul className='m-3 grid grid-cols-1 gap-4'>
-			{posterBts?.map(item => {
+			{productsBts?.map(item => {
 				return (
 					<li key={item.id} className='grid grid-cols-gridCardProduct rounded-xl  bg-blanco-cool shadow-md overflow-hidden'>
 						<img className='w-full' src={item.image} alt={item.name} />

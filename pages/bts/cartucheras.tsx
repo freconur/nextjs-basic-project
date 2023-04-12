@@ -1,26 +1,26 @@
 import LayoutBts from '@components/Layout/LayoutBts'
 import ProductsCard from '@components/ProductsCard/ProductsCard'
 import React, { useEffect, useReducer } from 'react'
-import { getPosterBts } from 'reducer/Bts'
+import { getCartucherasBts, getLibretasBts, getTazasBts } from 'reducer/Bts'
 import { ProductsReducer, productInitialState } from 'reducer/Products.reducer'
 
-const PosterBts = () => {
+const CartucherasBts = () => {
 const [state, dispatch] = useReducer(ProductsReducer,productInitialState)
-const { posterBts } = state
-console.log('posterBts', posterBts)
+const { cartucherasBts } = state
   useEffect(() => {
-    getPosterBts(dispatch)
+    getCartucherasBts(dispatch)
   },[])
+  console.log('cartucherasBts',cartucherasBts)
   return (
     <LayoutBts>
       <div className='text-2xl text-gray-500'>
         {
-          posterBts &&
-        <ProductsCard productsBts={posterBts} />
+          cartucherasBts &&
+        <ProductsCard productsBts={cartucherasBts} />
         }
       </div>
     </LayoutBts>
   )
 }
 
-export default PosterBts
+export default CartucherasBts
