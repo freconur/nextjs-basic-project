@@ -31,6 +31,8 @@ module.exports = {
         'fondo-body': '#f9f9f9',
         'fuxia':'#eb179e',
         'texto': 'rgb(75 85 99)',
+        'texto-title': '#565656e3',
+        'texto-suave': 'text-gray-100',
         'whatsapp': '#32bb46',
         'footer':'rgb(34,34,34)'
       },
@@ -38,6 +40,9 @@ module.exports = {
           // Complex site-specific row configuration
           'layoutGlobal': 'auto 1fr auto',
         },
+        gridTemplateColumns: {
+          'gridCardProduct': '40% 60%',
+        }
     },
     variants: {
       extend: {
