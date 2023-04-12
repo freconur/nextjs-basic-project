@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative z-20 w-full bg-violeta h-[75px] flex justify-between items-center px-2 shadow-md">
+      <nav className="relative z-50 w-full bg-violeta h-[75px] flex justify-between items-center px-2 shadow-md">
         {showModalNavbar && (
           <NavbarModal
             showModalNavbar={showModalNavbar}
