@@ -7,7 +7,7 @@ type Props ={
 }
 const Layout= ({children}:Props) => {
   return (
-    <div>
+    <div className='grid grid-rows-layoutGlobal min-h-[100vh]'>
         <Navbar />
         {children}
         <Footer/>

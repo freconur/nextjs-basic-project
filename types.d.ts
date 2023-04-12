@@ -20,3 +20,14 @@ interface BtsCategories {
   category?: string;
   image?: string;
 }
+
+interface Products {
+id?: string
+category?: string
+image?: string
+marca?: string
+name?: string
+price?: string
+state?: boolean
+stock?: number
+}

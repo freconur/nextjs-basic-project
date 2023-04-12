@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 type Props = {
   btsCategories: BtsCategories[];
@@ -9,7 +10,8 @@ const BtsCategories = ({ btsCategories }: Props) => {
     <>
       <h2 className="text-3xl text-verde font-bold capitalize my-10 text-center">categorias</h2>
       <ul className="grid grid-cols-1 gap-5 m-2">
-        <li className="flex w-full rounded-xl shadow-md p-5 bg-blanco-cool">
+        <li className="w-full rounded-xl shadow-md  bg-blanco-cool">
+          <Link className="flex p-5" href="bts/poster">
           <img className="rounded-full max-w-[150px]" src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fposter%2Fposter-bts-brilliant-color.jpg?alt=media&token=bbefab8e-6eee-4d48-b6b0-4279acc71375" alt="poster bts" />
           <div className="p-3 grid place-content-center">
             <h3 className="text-2xl text-fuxia capitalize font-bold text-center">poster</h3>
@@ -17,6 +19,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
               poster bts para tu cuarto pa ponerte en cuatro
             </div>
           </div>
+          </Link>
         </li>
         <li className="flex flex-row-reverse w-full rounded-xl shadow-md p-5 bg-blanco-cool">
           <img className="rounded-full max-w-[150px]" src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fcojines%2Fbts-cojin-al-authogrape.jpg?alt=media&token=9cce4c25-6d37-41e1-9127-c2676ee2e506" alt="poster bts" />

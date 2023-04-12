@@ -34,6 +34,10 @@ module.exports = {
         'whatsapp': '#32bb46',
         'footer':'rgb(34,34,34)'
       },
+        gridTemplateRows: {
+          // Complex site-specific row configuration
+          'layoutGlobal': 'auto 1fr auto',
+        },
     },
     variants: {
       extend: {
