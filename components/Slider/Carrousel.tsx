@@ -20,7 +20,7 @@ const Carrousel = ({ children: slides, autoSlide=false }: PropsCarrousel) => {
       }, [])
   return (
     <>
-      {/* <div className="overflow-hidden relative"> */}
+      <div className="overflow-hidden relative">
       <div className=" relative">
         <Link
         href={`/${slides[currentValue].props.alt}`}
@@ -59,7 +59,7 @@ const Carrousel = ({ children: slides, autoSlide=false }: PropsCarrousel) => {
       </div>
       </div>
 
-    {/* </div> */}
+    </div>
 
     </>
   );

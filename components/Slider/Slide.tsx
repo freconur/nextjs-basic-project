@@ -3,13 +3,7 @@ import { IMAGE_SLIDER_SM, IMAGE_SLIDER_XS } from "./ArrayImageSlider";
 import Carrousel from "./Carrousel";
 import Image from "next/image";
 
-
-
-
-
 const Slide = () => {
-
-
   return (
     <>
       <div className="sm:hidden">
@@ -21,7 +15,6 @@ const Slide = () => {
               height={640}
               alt={url.name}
             />
-            // <img src={url.urlImage} alt="image" />
           ))}
         </Carrousel>
       </div>
@@ -34,7 +27,6 @@ const Slide = () => {
               height={640}
               alt={url.name}
             />
-            // <img  src={url.urlImage} alt={`${url.name}`} />
           ))}
         </Carrousel>
       </div>
