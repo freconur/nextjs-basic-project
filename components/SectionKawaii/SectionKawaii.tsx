@@ -1,4 +1,5 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter";
+import { IMAGES_KAWAII } from "ImagesLink/imagesLink";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -12,7 +13,7 @@ const SectionKawaii = () => {
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 w-full">
         <div className="flex items-center justify-center w-full">
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/kawaii%2Fbanner-kawaii%2Fkawaii-banner.png?alt=media&token=bb75fd4a-8fed-4f73-a2aa-84b81b0c8808"
+            src={IMAGES_KAWAII.kawaiiPage.section}
             width={500}
             height={500}
             alt="bts"

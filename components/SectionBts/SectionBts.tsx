@@ -1,4 +1,5 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter";
+import { IMAGES_BTS } from "ImagesLink/imagesLink";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -13,7 +14,7 @@ const SectionBts = () => {
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           <div className="flex items-center justify-center w-full">
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts-section-web.jpg?alt=media&token=d782cf52-058c-496d-9c77-11e5687b43be"
+              src={IMAGES_BTS.btsPage.section}
               width={500}
               height={500}
               alt="bts"

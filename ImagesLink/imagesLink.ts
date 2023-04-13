@@ -16,3 +16,17 @@ export const IMAGESCATEGORIES = {
   medias:
     "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fmedias%2Fbts-media-blanco-kawaii.jpg?alt=media&token=a9ee8709-449e-4aba-8832-c01d46405b2d",
 };
+
+export const IMAGES_BTS = {
+  btsPage:{
+    mobile:"https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fheader-bts%2Fheader-bts-page-mobile.jpg?alt=media&token=47a8e6a4-3ddf-469c-ba29-181b6d770099",
+    web:"https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts%2Fheader-bts%2Fheader-bts-page-web.jpg?alt=media&token=cf5c8b9f-b6a9-4a73-9de9-953e86f84c9f",
+    section:"https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/bts-section-web.jpg?alt=media&token=d782cf52-058c-496d-9c77-11e5687b43be",
+  },
+  
+}
+export const IMAGES_KAWAII = {
+  kawaiiPage:{
+    section:"https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/kawaii%2Fbanner-kawaii%2Fkawaii-banner.png?alt=media&token=bb75fd4a-8fed-4f73-a2aa-84b81b0c8808"
+  }
+}
