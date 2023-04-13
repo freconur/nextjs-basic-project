@@ -21,6 +21,9 @@ module.exports = {
       xl: '1200px'
     },
     extend: {
+      margin: {
+        'centrar-contenido': 'auto'
+      },
       colors: {
         'violeta': '#6610f2',
         'verde': '#00b19f',

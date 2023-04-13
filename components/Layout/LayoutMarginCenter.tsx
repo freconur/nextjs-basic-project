@@ -5,7 +5,7 @@ type Props = {
 }
 const LayoutMarginCenter = ({ children }: Props) => {
     return (
-        <div className='w-full xl:w-[1200px] xl:m-5'>
+        <div className='w-full xl:w-[1200px] xl:m-auto'>
         {/* <div className='w-full'> */}
             {children}
         </div>

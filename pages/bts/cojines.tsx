@@ -16,7 +16,7 @@ console.log(cojinesBts)
       <div className='text-gray-500'>
         {
           cojinesBts &&
-        <ProductsCard productsBts={cojinesBts} />
+        <ProductsCard products={cojinesBts} />
         }
       </div>
     </LayoutBts>

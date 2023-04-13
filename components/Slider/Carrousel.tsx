@@ -21,12 +21,10 @@ const Carrousel = ({ children: slides, autoSlide = false }: PropsCarrousel) => {
   return (
     <>
       <div className="relative">
-        <div className=" relative">
+        <div className="overflow-hidden relative">
           <Link
             href={`/${slides[currentValue].props.alt}`}
-            // href={`/products/${slides[currentValue].props.id}``}
             className="relative z-10 left-0 right-0 top-0 flex transition-transform ease-out duration-500"
-            // className="absolute left-0 right-0 top-0 flex transition-transform ease-out duration-500"
             style={{ transform: `translateX(-${currentValue * 100}%)` }}
           >
             {slides}
@@ -45,17 +43,18 @@ const Carrousel = ({ children: slides, autoSlide = false }: PropsCarrousel) => {
               <RiArrowDownSLine className="text-3xl" />
             </button>
           </div>
-          <div className="absolute z-20 -bottom-6 right-0 left-0">
-            <div className="flex items-center justify-center gap-2">
-              {slides.map((_, i) => (
-                <div
-                  className={`
+        </div>
+        <div className="absolute z-20 -bottom-6 right-0 left-0">
+          <div className="flex items-center justify-center gap-2">
+            {slides.map((_, i) => (
+              <div
+                key={i}
+                className={`
               transition-all w-2 h-2 bg-gray-500 rounded-full
               ${currentValue === i ? "p-1.5" : "bg-opacity-50"}
             `}
-                />
-              ))}
-            </div>
+              />
+            ))}
           </div>
         </div>
       </div>

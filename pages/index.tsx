@@ -17,8 +17,6 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 const Home = ({ product }: { product: Kawaii[] }) => {
-  console.log(product)
-  console.log('json', JSON.parse(JSON.stringify(product)))
 
   return (
     <div>
