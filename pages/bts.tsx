@@ -1,4 +1,5 @@
 import BtsCategories from "@components/BtsCategories/BtsCategories"
+import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter"
 import { useEffect, useReducer } from "react"
 import { getBtsCategories } from "reducer/Bts"
 import { ProductsReducer, productInitialState } from "reducer/Products.reducer"

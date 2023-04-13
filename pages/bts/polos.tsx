@@ -12,7 +12,8 @@ const { polosBts } = state
   },[])
   return (
     <LayoutBts>
-      <div className='text-2xl text-gray-500'>
+      <div className='text-gray-500'>
+      <h1 className='text-2xl font-semibold text-verde uppercase my-5 ml-3 text-left'>polos</h1>
         {
           polosBts &&
         <ProductsCard productsBts={polosBts} />

@@ -14,9 +14,9 @@ const SideBar = () => {
   console.log('btsCategories', btsCategories)
   return (
     <>
-      <div className='sticky top-0 right-0 z-20'>
+      <div className='sticky md:hidden w-full top-0 right-0 z-20'>
         <div onClick={() => setShowCategories(!showCategories)} className='relative cursor-pointer justify-center flex items-center  text-center w-full bg-blanco-cool h-[60px] drop-shadow-md'>
-          <p className={`relative z-20 justify-center items-center flex text-xl leading-[3.25rem] w-full h-full bg-blanco-cool  capitalize font-bold ${showCategories ? "bg-violet-300 duration-300 transition text-blanco-cool" : "text-texto"}`}>
+          <p className={`relative z-20 justify-center items-center flex text-xl leading-[3.25rem] w-full h-full bg-blanco-cool  capitalize font-bold ${showCategories ? "bg-violet-200 duration-300 transition text-blanco-cool" : "text-texto"}`}>
             categorias
             <RiArrowDownSLine className={` mt-1 duration-300 transition ${showCategories && "-rotate-90 duration-300 transition"}`}/>
           </p>

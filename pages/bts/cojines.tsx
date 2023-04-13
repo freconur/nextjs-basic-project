@@ -13,7 +13,7 @@ console.log(cojinesBts)
   },[])
   return (
     <LayoutBts>
-      <div className='text-2xl text-gray-500'>
+      <div className='text-gray-500'>
         {
           cojinesBts &&
         <ProductsCard productsBts={cojinesBts} />

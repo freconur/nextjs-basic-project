@@ -12,7 +12,8 @@ const { cojinesMidBts } = state
   },[])
   return (
     <LayoutBts>
-      <div className='text-2xl text-gray-500'>
+      <div className='text-gray-500'>
+        <h1 className='text-2xl font-semibold text-verde uppercase my-5 ml-3 text-left'>cojines mid</h1>
         {
           cojinesMidBts &&
         <ProductsCard productsBts={cojinesMidBts} />

@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative z-50 w-full bg-violeta h-[75px] flex justify-between items-center px-2 shadow-md">
+      <nav className="relative z-50 w-full bg-violeta h-[60px] flex justify-between items-center px-2 shadow-md">
         {showModalNavbar && (
           <NavbarModal
             showModalNavbar={showModalNavbar}
@@ -24,7 +24,7 @@ const Navbar = () => {
             />
           </a>
         </Link>
-        <ul className="text-2xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
+        <ul className="text-xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
           <li className="ml-[50px] overflow-hidden rounded-full hover:shadow-xl ">
             <Link href="/" legacyBehavior>
               <a className="flex items-center justify-center leading-[50px] duration-500 transition ease-out  pl-4 pr-1 border-0  hover:bg-verde hover:rounded-full hover:h-full hover:w-full">

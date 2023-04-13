@@ -18,7 +18,7 @@ module.exports = {
       md: '768px',
       cs:'953px',
       lg: '1024px',
-      xl: '1280px'
+      xl: '1200px'
     },
     extend: {
       colors: {
@@ -34,14 +34,20 @@ module.exports = {
         'texto-title': '#565656e3',
         'texto-suave': 'text-gray-100',
         'whatsapp': '#32bb46',
-        'footer':'rgb(34,34,34)'
+        'footer':'rgb(34,34,34)',
+        'azulClaro': '#dbeafe',
+        'azulOscuro': '#93c5fd',
+        
       },
         gridTemplateRows: {
           // Complex site-specific row configuration
           'layoutGlobal': 'auto 1fr auto',
+          'layoutCatBts': '80% 20%',
         },
         gridTemplateColumns: {
           'gridCardProduct': '40% 60%',
+          'gridSidebar': '18% 82%',
+          'gridSidebarMd': '20% auto',
         }
     },
     variants: {
