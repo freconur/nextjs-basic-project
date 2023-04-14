@@ -8,7 +8,7 @@ type Props = {
 }
 const LayoutBts = ({ children }: Props) => {
   return (
-    <>
+    <LayoutMarginCenter>
       <div className='relative md:hidden'>
         <SideBar />
         {children}
@@ -17,7 +17,7 @@ const LayoutBts = ({ children }: Props) => {
         <SideBarLeft />
         {children}
       </div>
-    </>
+    </LayoutMarginCenter>
   )
 }
 

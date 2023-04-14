@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 
@@ -10,7 +11,8 @@ const ProductsCard = ({ products }: Props) => {
 			{products?.map(item => {
 				return (
 					<li key={item.id} className='grid grid-cols-gridCardProduct xm:block rounded-xl  bg-blanco-cool shadow-md overflow-hidden'>
-						<img className='w-full' src={item.image} alt={item.name} />
+						<Image className='w-full' src={`${item.image}`} width={300} height={300} alt={`${item.name}`} />
+						{/* <img className='w-full' src={item.image} alt={item.name} /> */}
 						<div className='grid p-2 ml-2'>
 							<h4 className='text-texto-title text-md font-semibold uppercase'>
 								{item.marca}

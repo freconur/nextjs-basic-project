@@ -1,22 +1,23 @@
 import LayoutBts from '@components/Layout/LayoutBts'
 import ProductsCard from '@components/ProductsCard/ProductsCard'
+import { GetServerSideProps } from 'next'
 import React, { useEffect, useReducer } from 'react'
 import { getCojinesBts } from 'reducer/Bts'
 import { ProductsReducer, productInitialState } from 'reducer/Products.reducer'
 
-const CojinesBts = () => {
-const [state, dispatch] = useReducer(ProductsReducer,productInitialState)
-const { cojinesBts } = state
-console.log(cojinesBts)
-  useEffect(() => {
-    getCojinesBts(dispatch)
-  },[])
+export const getServerSideProps: GetServerSideProps = async () => {
+  const product:Products[] = await getCojinesBts()
+  return {
+      props: { product }
+  }
+}
+const CojinesBts = ({product}: {product:Products[]}) => {
   return (
     <LayoutBts>
       <div className='text-gray-500'>
         {
-          cojinesBts &&
-        <ProductsCard products={cojinesBts} />
+          product &&
+        <ProductsCard products={product} />
         }
       </div>
     </LayoutBts>

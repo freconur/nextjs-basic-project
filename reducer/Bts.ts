@@ -1,6 +1,8 @@
 import { app } from "../firebase/firebase";
 import {
   collection,
+  doc,
+  getDoc,
   getDocs,
   getFirestore,
   onSnapshot,
@@ -17,83 +19,68 @@ export const getBtsCategories = async (dispatch: (action: any) => void) => {
   });
 };
 
-export const getTazasBts = (dispatch: (action: any) => void) => {
-  const colRef = collection(db, "bts/etkmO3TrV2WqzKwVGQQO/tazas");
-  onSnapshot(colRef, (snapshot) => {
-    let tazas: Products[] = [];
-    snapshot.docs.forEach((doc) => {
-      tazas.push({ ...doc.data(), id: doc.id });
-    });
-    dispatch({ type: "getTazasBts", payload: tazas });
+export const getTazasBts = async() => {
+  const rta = await getDocs(collection(db, "bts/etkmO3TrV2WqzKwVGQQO/tazas"));
+  const tazas: Products[] = [];
+  rta.forEach((doc) => {
+    tazas.push({ ...doc.data(), id: doc.id });
   });
+  return tazas
 };
-export const getPosterBts = (dispatch: (action: any) => void) => {
-  const colRef = collection(db, "bts/Fwh0KuBTK4P5xmzJB8j2/poster");
-  onSnapshot(colRef, (snapshot) => {
-    let poster: Products[] = [];
-    snapshot.docs.forEach((doc) => {
-      poster.push({ ...doc.data(), id: doc.id });
-    });
-    dispatch({ type: "getPosterBts", payload: poster });
+export const getPosterBts = async() => {
+  const rta = await getDocs(collection(db, "bts/Fwh0KuBTK4P5xmzJB8j2/poster"));
+  const poster: Products[] = [];
+  rta.forEach((doc) => {
+    poster.push({ ...doc.data(), id: doc.id });
   });
+  return poster
 };
-export const getLibretasBts = (dispatch: (action: any) => void) => {
-  const colRef = collection(db, "bts/GEhNFGq9WCuKdxZxzF35/libretas");
-  onSnapshot(colRef, (snapshot) => {
-    let libretas: Products[] = [];
-    snapshot.docs.forEach((doc) => {
-      libretas.push({ ...doc.data(), id: doc.id });
-    });
-    dispatch({ type: "getLibretasBts", payload: libretas });
+export const getLibretasBts = async() => {
+  const rta = await getDocs(collection(db, "bts/GEhNFGq9WCuKdxZxzF35/libretas"));
+  const libretas: Products[] = [];
+  rta.forEach((doc) => {
+    libretas.push({ ...doc.data(), id: doc.id });
   });
+  return libretas
 };
-export const getCojinesBts = (dispatch: (action: any) => void) => {
-  const colRef = collection(db, "bts/G91fJSTIGxPbP6YWAr4r/cojines");
-  onSnapshot(colRef, (snapshot) => {
-    let cojines: Products[] = [];
-    snapshot.docs.forEach((doc) => {
-      cojines.push({ ...doc.data(), id: doc.id });
-    });
-    dispatch({ type: "getCojinesBts", payload: cojines });
+export const getCojinesBts = async() => {
+  const rta = await getDocs(collection(db, "bts/G91fJSTIGxPbP6YWAr4r/cojines"));
+  const cojines: Products[] = [];
+  rta.forEach((doc) => {
+    cojines.push({ ...doc.data(), id: doc.id });
   });
+  return cojines
 };
-export const getCartucherasBts = (dispatch: (action: any) => void) => {
-  const colRef = collection(db, "bts/Xq9UGyUn6d4OukEb1jPk/cartucheras");
-  onSnapshot(colRef, (snapshot) => {
-    let cartucheras: Products[] = [];
-    snapshot.docs.forEach((doc) => {
+// export const getCartucherasBts = (dispatch: (action: any) => void) => {
+  export const getCartucherasBts = async() => {
+    const rta = await getDocs(collection(db, "bts/Xq9UGyUn6d4OukEb1jPk/cartucheras"));
+    const cartucheras: Products[] = [];
+    rta.forEach((doc) => {
       cartucheras.push({ ...doc.data(), id: doc.id });
     });
-    dispatch({ type: "getCartucherasBts", payload: cartucheras });
-  });
+    return cartucheras
 };
-export const getCojinesMidBts = (dispatch: (action: any) => void) => {
-  const colRef = collection(db, "bts/M399N3OWcQXBvyIPkz0H/cojinesMid");
-  onSnapshot(colRef, (snapshot) => {
-    let cojinesMid: Products[] = [];
-    snapshot.docs.forEach((doc) => {
-      cojinesMid.push({ ...doc.data(), id: doc.id });
-    });
-    dispatch({ type: "getCojinesMidBts", payload: cojinesMid });
+export const getCojinesMidBts = async() => {
+  const rta = await getDocs(collection(db, "bts/M399N3OWcQXBvyIPkz0H/cojinesMid"));
+  const cojinesMid: Products[] = [];
+  rta.forEach((doc) => {
+    cojinesMid.push({ ...doc.data(), id: doc.id });
   });
+  return cojinesMid
 };
-export const getPolosBts = (dispatch: (action: any) => void) => {
-  const colRef = collection(db, "bts/n8rVgfULKHbGhFTMWv3Z/polos");
-  onSnapshot(colRef, (snapshot) => {
-    let polos: Products[] = [];
-    snapshot.docs.forEach((doc) => {
-      polos.push({ ...doc.data(), id: doc.id });
-    });
-    dispatch({ type: "getPolosBts", payload: polos });
+export const getPolosBts = async() => {
+  const rta = await getDocs(collection(db, "bts/n8rVgfULKHbGhFTMWv3Z/polos"));
+  const polos: Products[] = [];
+  rta.forEach((doc) => {
+    polos.push({ ...doc.data(), id: doc.id });
   });
+  return polos
 };
-export const getMediasBts = (dispatch: (action: any) => void) => {
-  const colRef = collection(db, "bts/vHq1CjFvewCAZ038ICp9/medias");
-  onSnapshot(colRef, (snapshot) => {
-    let medias: Products[] = [];
-    snapshot.docs.forEach((doc) => {
-      medias.push({ ...doc.data(), id: doc.id });
-    });
-    dispatch({ type: "getMediasBts", payload: medias });
+export const getMediasBts = async() => {
+  const rta = await getDocs(collection(db, "bts/vHq1CjFvewCAZ038ICp9/medias"));
+  const medias: Products[] = [];
+  rta.forEach((doc) => {
+    medias.push({ ...doc.data(), id: doc.id });
   });
+  return medias
 };
