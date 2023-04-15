@@ -21,7 +21,7 @@ const DetailsBiombos = ({ product }: { product: Biombos }) => {
   console.log('product', product)
   return (
     <LayoutMarginCenter>
-      <div className='grid grid-cols-1 p-10 gap-10 sm:grid-cols-2'>
+      <div className='grid grid-cols-1 p-5 sm:p-7 sg:p-10 gap-10 sg:grid-cols-2'>
         <div className='overflow-hidden rounded-lg'>
           <Image src={`${product.image}`} alt={`${product.name}`} width={150} height={150} layout='responsive' />
         </div>
