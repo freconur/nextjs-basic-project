@@ -39,4 +39,5 @@ interface Biombos {
   products?: string[]
   price?: string
   theme?: string
+  description?: string
 }
