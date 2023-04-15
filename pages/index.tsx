@@ -9,14 +9,14 @@ import Slide from '@components/Slider/Slide'
 import LayoutMarginCenter from '@components/Layout/LayoutMarginCenter'
 
 
-export const getStaticProps: GetStaticProps = async () => {
-  const product: Kawaii[] = await getKawaiiProducts()
-  // const rta = product
-  return {
-    props: { product }
-  }
-}
-const Home = ({ product }: { product: Kawaii[] }) => {
+// export const getStaticProps: GetStaticProps = async () => {
+//   const product: Kawaii[] = await getKawaiiProducts()
+//   // const rta = product
+//   return {
+//     props: { product }
+//   }
+// }
+const Home = () => {
 
   return (
     <div>

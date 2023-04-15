@@ -16,12 +16,12 @@ const kawaii = ({ product }: { product: Products[] }) => {
     console.log('productKawaii', product)
     return (
         <LayoutKawaii>
-      <div className='text-gray-500'>
+            <div className='text-gray-500'>
 
-           <ProductsCard products={product}/>
-      </div>
+                <ProductsCard products={product} />
+            </div>
         </LayoutKawaii>
-        )
+    )
 }
 
 export default kawaii
