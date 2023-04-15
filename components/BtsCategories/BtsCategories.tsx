@@ -1,5 +1,6 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter";
 import { IMAGESCATEGORIES } from "ImagesLink/imagesLink";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 type Props = {
@@ -16,7 +17,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
           <li className="w-full h-fit rounded-xl shadow-md  bg-blanco-cool xsm:overflow-hidden">
             <Link className="flex p-5 xsm:p-0 xsm:block" href="bts/poster">
               <div className="w-full overflow-hidden rounded-full shadow-lg xsm:shadow-none xsm:rounded-none">
-                <img className="  xsm:w-full  " src={IMAGESCATEGORIES.poster} alt="poster bts" />
+                <Image className="xsm:w-full" src={IMAGESCATEGORIES.poster} alt="poster bts" width={150} height={150} layout="responsive"/>
               </div>
               <div className="p-3 grid place-content-center xsm:block">
                 <h3 className="text-2xl text-fuxia capitalize font-bold text-center">poster</h3>
@@ -29,7 +30,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
           <li className="w-full h-fit rounded-xl shadow-md  bg-blanco-cool xsm:overflow-hidden">
             <Link className="flex p-5 xsm:p-0 xsm:block" href="bts/cartucheras">
               <div className="w-full overflow-hidden rounded-full shadow-lg xsm:shadow-none xsm:rounded-none">
-                <img className="  xsm:w-full  " src={IMAGESCATEGORIES.cartucheras} alt="poster bts" />
+              <Image className="xsm:w-full" src={IMAGESCATEGORIES.cartucheras} alt="cartucheras bts" width={150} height={150} layout="responsive"/>
               </div>
               <div className="p-3 grid place-content-center xsm:block">
                 <h3 className="text-2xl text-fuxia capitalize font-bold text-center">cartucheras</h3>
@@ -42,7 +43,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
           <li className="w-full h-fit rounded-xl shadow-md  bg-blanco-cool xsm:overflow-hidden">
             <Link className="flex p-5 xsm:p-0 xsm:block" href="bts/libretas">
               <div className="w-full overflow-hidden rounded-full shadow-lg xsm:shadow-none xsm:rounded-none">
-                <img className="  xsm:w-full  " src={IMAGESCATEGORIES.libretas} alt="poster bts" />
+              <Image className="xsm:w-full" src={IMAGESCATEGORIES.libretas} alt="libretas bts" width={150} height={150} layout="responsive"/>
               </div>
               <div className="p-3 grid place-content-center xsm:block">
                 <h3 className="text-2xl text-fuxia capitalize font-bold text-center">libretas</h3>
@@ -55,7 +56,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
           <li className="w-full h-fit rounded-xl shadow-md  bg-blanco-cool xsm:overflow-hidden">
             <Link className="flex p-5 xsm:p-0 xsm:block" href="bts/cojines">
               <div className="w-full overflow-hidden rounded-full shadow-lg xsm:shadow-none xsm:rounded-none">
-                <img className="  xsm:w-full  " src={IMAGESCATEGORIES.cojines} alt="poster bts" />
+              <Image className="xsm:w-full" src={IMAGESCATEGORIES.cojines} alt="cojines bts" width={150} height={150} layout="responsive"/>
               </div>
               <div className="p-3 grid place-content-center xsm:block">
                 <h3 className="text-2xl text-fuxia capitalize font-bold text-center">cojines</h3>
@@ -68,7 +69,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
           <li className="w-full h-fit rounded-xl shadow-md  bg-blanco-cool xsm:overflow-hidden">
             <Link className="flex p-5 xsm:p-0 xsm:block" href="bts/cojinesMid">
               <div className="w-full overflow-hidden rounded-full shadow-lg xsm:shadow-none xsm:rounded-none">
-                <img className="  xsm:w-full  " src={IMAGESCATEGORIES.cojinesMid} alt="poster bts" />
+              <Image className="xsm:w-full" src={IMAGESCATEGORIES.cojinesMid} alt="cojinesMid bts" width={150} height={150} layout="responsive"/>
               </div>
               <div className="p-3 grid place-content-center xsm:block">
                 <h3 className="text-2xl text-fuxia capitalize font-bold text-center">cojinesMid</h3>
@@ -81,7 +82,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
           <li className="w-full h-fit rounded-xl shadow-md  bg-blanco-cool xsm:overflow-hidden">
             <Link className="flex p-5 xsm:p-0 xsm:block" href="bts/medias">
               <div className="w-full overflow-hidden rounded-full shadow-lg xsm:shadow-none xsm:rounded-none">
-                <img className="  xsm:w-full  " src={IMAGESCATEGORIES.medias} alt="poster bts" />
+              <Image className="xsm:w-full" src={IMAGESCATEGORIES.medias} alt="medias bts" width={150} height={150} layout="responsive"/>
               </div>
               <div className="p-3 grid place-content-center xsm:block">
                 <h3 className="text-2xl text-fuxia capitalize font-bold text-center">medias</h3>
@@ -94,7 +95,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
           <li className="w-full h-fit rounded-xl shadow-md  bg-blanco-cool xsm:overflow-hidden">
             <Link className="flex p-5 xsm:p-0 xsm:block" href="bts/tazas">
               <div className="w-full overflow-hidden rounded-full shadow-lg xsm:shadow-none xsm:rounded-none">
-                <img className="  xsm:w-full  " src={IMAGESCATEGORIES.tazas} alt="poster bts" />
+              <Image className="xsm:w-full" src={IMAGESCATEGORIES.tazas} alt="tazas bts" width={150} height={150} layout="responsive"/>
               </div>
               <div className="p-3 grid place-content-center xsm:block">
                 <h3 className="text-2xl text-fuxia capitalize font-bold text-center">tazas</h3>
@@ -107,7 +108,7 @@ const BtsCategories = ({ btsCategories }: Props) => {
           <li className="w-full h-fit rounded-xl shadow-md  bg-blanco-cool xsm:overflow-hidden">
             <Link className="flex p-5 xsm:p-0 xsm:block" href="bts/polos">
               <div className="w-full overflow-hidden rounded-full shadow-lg xsm:shadow-none xsm:rounded-none">
-                <img className="  xsm:w-full  " src={IMAGESCATEGORIES.polos} alt="poster bts" />
+              <Image className="xsm:w-full" src={IMAGESCATEGORIES.polos} alt="polos bts" width={150} height={150} layout="responsive"/>
               </div>
               <div className="p-3 grid place-content-center xsm:block">
                 <h3 className="text-2xl text-fuxia capitalize font-bold text-center">polos</h3>

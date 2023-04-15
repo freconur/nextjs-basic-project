@@ -1,14 +1,15 @@
 import LayoutBts from '@components/Layout/LayoutBts'
 import ProductsCard from '@components/ProductsCard/ProductsCard'
-import { GetServerSideProps } from 'next'
+import { GetServerSideProps, GetStaticProps } from 'next'
 import React, { useEffect, useReducer } from 'react'
 import { getCojinesBts } from 'reducer/Bts'
 import { ProductsReducer, productInitialState } from 'reducer/Products.reducer'
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const product:Products[] = await getCojinesBts()
   return {
-      props: { product }
+      props: { product },
+
   }
 }
 const CojinesBts = ({product}: {product:Products[]}) => {

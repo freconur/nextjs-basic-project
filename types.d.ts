@@ -41,3 +41,11 @@ interface Biombos {
   theme?: string
   description?: string
 }
+interface CombosBts {
+  id?:string
+  description?:string
+  image?:string
+  marca?:string
+  price?:string
+  products?:string[]
+}

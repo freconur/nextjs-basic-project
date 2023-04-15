@@ -84,3 +84,11 @@ export const getMediasBts = async() => {
   });
   return medias
 };
+export const getBtsCombos = async () => {
+  const getCombos = await getDocs(collection(db, "combosbts"));
+  const combosBts:CombosBts[] = [];
+  getCombos.forEach((doc) => {
+    combosBts.push({ ...doc.data(), id: doc.id });
+  });
+  return combosBts;
+};
