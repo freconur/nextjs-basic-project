@@ -16,8 +16,8 @@ import LayoutMarginCenter from '@components/Layout/LayoutMarginCenter'
 //     props: { product }
 //   }
 // }
+console.log('llave', process.env.FIREBASE_CONFIG_API_KEY)
 const Home = () => {
-
   return (
     <div>
       <div className=''>

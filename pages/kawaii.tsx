@@ -13,7 +13,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
 }
 
 const kawaii = ({ product }: { product: Products[] }) => {
-    console.log('productKawaii', product)
     return (
         <LayoutKawaii>
             <div className='text-gray-500'>
