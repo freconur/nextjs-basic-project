@@ -62,7 +62,7 @@ const Navbar = () => {
       {/* <div> */}
         <RiMenuFill onClick={() => setShowModalNavbar(!showModalNavbar)}
         className={`${showModalNavbar && "rotate-180 transition duration-300"
-          } transition duration-300 fixed w-[45px] h-[45px] z-50 md:hidden rounded-[50%] bottom-5 right-5 overflow-hidden p-2 bg-blanco-cool drop-shadow-md cursor-pointer text-4xl`} />
+          } transition duration-300 fixed w-[50px] h-[50px] z-50 md:hidden rounded-[50%] bottom-5 right-5 overflow-hidden p-2 bg-blanco-cool drop-shadow-md cursor-pointer text-4xl`} />
         {/* <RiMenuFill className="text-4xl " /> */}
       {/* </div> */}
 
