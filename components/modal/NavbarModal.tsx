@@ -16,12 +16,11 @@ const MenuListModal = ({
   }
   return container
     ? createPortal(
-        <div className=" bg-modal  backdrop-blur-[0.5px] fixed inset-0 z-30">
-        <MenuMobile  showModalNavbar={showModalNavbar} />
-
+        <div className="bg-modal  backdrop-blur-[0.5px] fixed inset-0 z-30 md:hidden">
+          <MenuMobile showModalNavbar={showModalNavbar} />
         </div>,
-        container
-      )
+      container
+    )
     : null;
 };
 

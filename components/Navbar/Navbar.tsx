@@ -1,16 +1,29 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavbarModal from "../modal/NavbarModal";
 import { RiMenuFill } from "react-icons/ri";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import MenuMobile from "@components/MenuMobile/MenuMobile";
-const Navbar = () => {
-  const [showModalNavbar, setShowModalNavbar] = useState(false);
 
+
+function useWindowsSize() {
+  const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
+  useEffect(() => {
+    const handleResize = () => {
+      setSize([window.innerHeight, window.innerWidth]);
+    };
+    window.addEventListener("resize", handleResize);
+  }, []);
+  return size;
+}
+
+const Navbar = () => {
+  const [height, width] = useWindowsSize();
+  const [showModalNavbar, setShowModalNavbar] = useState(false);
   return (
     <>
       <nav className="relative z-50 w-full bg-violeta h-[60px] flex justify-between items-center px-2 shadow-md">
-        {showModalNavbar && (
+        {showModalNavbar && width < 768 && (
           <NavbarModal
             showModalNavbar={showModalNavbar}
             setShowModalNavbar={setShowModalNavbar}
@@ -46,14 +59,13 @@ const Navbar = () => {
         </ul>
         {/* menu burger flotante */}
       </nav>
-      <div
-        onClick={() => setShowModalNavbar(!showModalNavbar)}
-        className={`${
-          showModalNavbar && "rotate-180"
-        } transition fixed z-40 md:hidden rounded-[50%] bottom-5 right-5 overflow-hidden p-2 bg-blanco-cool drop-shadow-md cursor-pointer`}
-      >
-        <RiMenuFill className="text-4xl " />
-      </div>
+      {/* <div> */}
+        <RiMenuFill onClick={() => setShowModalNavbar(!showModalNavbar)}
+        className={`${showModalNavbar && "rotate-180 transition duration-300"
+          } transition duration-300 fixed z-50 md:hidden rounded-[50%] bottom-5 right-5 overflow-hidden p-2 bg-blanco-cool drop-shadow-md cursor-pointer text-4xl`} />
+        {/* <RiMenuFill className="text-4xl " /> */}
+      {/* </div> */}
+
     </>
   );
 };
