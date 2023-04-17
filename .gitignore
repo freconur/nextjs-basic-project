@@ -8,3 +8,8 @@ settings.json
 .env.production.local
 .env.production
 ```
+.vercel
+
+/public/sitemap.xml
+/public/sitemap-0.xml
+/public/robots.txt
