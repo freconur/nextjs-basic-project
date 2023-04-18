@@ -1,6 +1,6 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter";
 import { IMAGES_BTS } from "ImagesLink/imagesLink";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,15 +12,13 @@ const SectionBts = () => {
           productos bts
         </h1>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <div className="relative">
+          <div>
           {/* <div className="flex items-center justify-center w-full relative"> */}
             <Image
               src={IMAGES_BTS.btsPage.section}
               width={1080}
               height={1080}
               alt="bts"
-              layout="intrinsic"
-              // objectFit="cover"
             />
           </div>
           <div className="grid place-content-center h-full">

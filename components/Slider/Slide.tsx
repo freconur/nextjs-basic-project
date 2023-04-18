@@ -7,14 +7,14 @@ import { imageBlur } from "ImagesLink/blurImage";
 const Slide = () => {
   return (
     <>
-      <div className="xs:hidden">
+      <div className="xs:hidden relative">
         <Carrousel autoSlide={true}>
           {IMAGE_SLIDER_XS.map((url, index) => (
             <Image
               key={index}
               src={url.urlImage}
-              width={640}
-              height={640}
+              width={1080}
+              height={1080}
               alt={url.name}
               priority
               blurDataURL={imageBlur}
@@ -29,8 +29,8 @@ const Slide = () => {
             <Image
               key={index}
               src={url.urlImage}
-              width={1920}
-              height={640}
+              width={190}
+              height={650}
               alt={url.name}
             />
           ))}

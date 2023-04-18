@@ -30,18 +30,18 @@ const Carrousel = ({ children: slides, autoSlide = false }: PropsCarrousel) => {
             {slides}
           </Link>
           <div className="absolute inset-0 flex items-center justify-between p-4">
-            <button
+            <div
               onClick={prev}
               className="relative z-20 rounded-full rotate-90 bg-gray-100 hover:bg-white"
             >
               <RiArrowDownSLine className="text-3xl" />
-            </button>
-            <button
+            </div>
+            <div
               onClick={next}
               className="relative z-20  rounded-full -rotate-90 bg-gray-100 hover:bg-white"
             >
               <RiArrowDownSLine className="text-3xl" />
-            </button>
+            </div>
           </div>
         </div>
         <div className="absolute z-20 -bottom-6 right-0 left-0">
