@@ -16,7 +16,7 @@ const SectionBts = () => {
           {/* <div> */}
           {/* <div className="flex items-center justify-center w-full relative"> */}
             <Image
-              src={IMAGES_BTS.btsPage.section}
+              src={IMAGES_BTS.btsPage.low}
               width={1080}
               height={1080}
               alt="bts"
