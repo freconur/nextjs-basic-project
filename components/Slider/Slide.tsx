@@ -32,7 +32,6 @@ const Slide = () => {
               width={1900}
               height={650}
               alt={url.name}
-              priority
               // placeholder="blur"
             />
           ))}
