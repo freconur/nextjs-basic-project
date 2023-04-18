@@ -40,3 +40,4 @@ export const TAZAS_SUBLIMADOS = {
     name:"diseno"
   },
 }
+export const LOGO_WALIKY = "https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/waliky-logo.png?alt=media&token=5a55b529-fd73-44dd-8120-35b9e1a00ecf"

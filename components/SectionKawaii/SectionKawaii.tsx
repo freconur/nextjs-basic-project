@@ -1,10 +1,10 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter";
 import { IMAGES_KAWAII } from "ImagesLink/imagesLink";
-// import Image from "next/image";
-import Image from "next/legacy/image";
+import Image from "next/image";
+// import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
-
+import {imageBlur} from "../../ImagesLink/blurImage"
 const SectionKawaii = () => {
   return (
     <LayoutMarginCenter>
@@ -17,9 +17,10 @@ const SectionKawaii = () => {
             src={IMAGES_KAWAII.kawaiiPage.section}
             width={1080}
             height={1080}
-            layout="responsive"
+            // layout="responsive"
             // fill
-            blurDataURL=""
+            blurDataURL={imageBlur}
+            placeholder="blur"
             alt="bts"
           />
         </div>

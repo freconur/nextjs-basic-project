@@ -2,6 +2,7 @@ import Link from "next/link";
 import { IMAGE_SLIDER_SM, IMAGE_SLIDER_XS } from "./ArrayImageSlider";
 import Carrousel from "./Carrousel";
 import Image from "next/image";
+import { imageBlur } from "ImagesLink/blurImage";
 
 const Slide = () => {
   return (
@@ -15,6 +16,9 @@ const Slide = () => {
               width={640}
               height={640}
               alt={url.name}
+              priority
+              blurDataURL={imageBlur}
+              placeholder="blur"
             />
           ))}
         </Carrousel>

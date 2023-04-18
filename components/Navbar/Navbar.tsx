@@ -4,6 +4,8 @@ import NavbarModal from "../modal/NavbarModal";
 import { RiMenuFill } from "react-icons/ri";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import MenuMobile from "@components/MenuMobile/MenuMobile";
+import { LOGO_WALIKY } from "ImagesLink/imagesLink";
+import Image from "next/image";
 
 
 function useWindowsSize() {
@@ -30,12 +32,15 @@ const Navbar = () => {
           />
         )}
         <Link href="/" legacyBehavior>
-          <a className="block w-[150px]">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/waliky-logo.png?alt=media&token=5a55b529-fd73-44dd-8120-35b9e1a00ecf"
+          {/* <a className="block w-[150px]"> */}
+            <Image
+              src={LOGO_WALIKY}
               alt="logo"
+              width={150}
+              height={50}
+              priority
+              // placeholder="blur"
             />
-          </a>
         </Link>
         <ul className="text-xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
           <li className="ml-[50px] overflow-hidden rounded-full hover:shadow-xl ">
