@@ -1,6 +1,7 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter";
 import { IMAGES_KAWAII } from "ImagesLink/imagesLink";
-import Image from "next/image";
+// import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,14 +9,17 @@ const SectionKawaii = () => {
   return (
     <LayoutMarginCenter>
 
-    <section className="w-full my-10 p-3">
+    <section className="w-full my-10 p-3 relative">
       <h1 className="text-3xl uppercase font-extrabold text-center text-cyan-600 my-6">kawaii</h1>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 w-full">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 w-full relative">
         <div className="items-center justify-center w-full relative">
           <Image
             src={IMAGES_KAWAII.kawaiiPage.section}
             width={1080}
             height={1080}
+            layout="responsive"
+            // fill
+            blurDataURL=""
             alt="bts"
           />
         </div>
