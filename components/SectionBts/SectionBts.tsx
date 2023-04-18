@@ -33,7 +33,7 @@ const SectionBts = () => {
               lo que podras encontrar, dale click al boton de abajo y sorprendete.
             </p>
             <div className="mt-5 bg-">
-              <Link href="/bts" legacyBehavior>
+              <Link href="/bts" prefetch={false} legacyBehavior>
                 <a className="inline-block cursor-pointer rounded-lg h-12 bg-fuxia hover:opacity-90 py-3 px-4 hover:-translate-y-0.5 tracking-wider uppercase transform transition focus:ring-fuchsia-400 focus:ring font-semibold text-blanco-cool shadow-lg">
                   ver productos
                 </a>
