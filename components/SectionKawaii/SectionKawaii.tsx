@@ -14,7 +14,7 @@ const SectionKawaii = () => {
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 w-full relative">
         <div className="items-center justify-center w-full relative">
           <Image
-            src={IMAGES_KAWAII.kawaiiPage.section}
+            src={IMAGES_KAWAII.kawaiiPage.low}
             width={1080}
             height={1080}
             // layout="responsive"

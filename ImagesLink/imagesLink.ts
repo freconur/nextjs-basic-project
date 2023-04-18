@@ -28,7 +28,8 @@ export const IMAGES_BTS = {
 }
 export const IMAGES_KAWAII = {
   kawaiiPage:{
-    section:"https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/kawaii%2Fbanner-kawaii%2Fkawaii-banner.png?alt=media&token=bb75fd4a-8fed-4f73-a2aa-84b81b0c8808"
+    section:"https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/kawaii%2Fbanner-kawaii%2Fkawaii-banner.png?alt=media&token=bb75fd4a-8fed-4f73-a2aa-84b81b0c8808",
+    low:"https://firebasestorage.googleapis.com/v0/b/apiwaliky.appspot.com/o/section-images%2Fkawaii-image-section.jpg?alt=media&token=4c6879eb-8c14-4f32-a198-d29391c4f6dd"
   }
 }
 export const TAZAS_SUBLIMADOS = {
