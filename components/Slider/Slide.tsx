@@ -7,7 +7,7 @@ import { imageBlur } from "ImagesLink/blurImage";
 const Slide = () => {
   return (
     <>
-      <div className="xs:hidden relative">
+      <main className="xs:hidden relative">
         <Carrousel autoSlide={true}>
           {IMAGE_SLIDER_XS.map((url, index) => (
             <Image
@@ -22,8 +22,8 @@ const Slide = () => {
             />
           ))}
         </Carrousel>
-      </div>
-      <div className="hidden xs:block">
+      </main>
+      <main className="hidden xs:block">
         <Carrousel autoSlide={true}>
           {IMAGE_SLIDER_SM.map((url, index) => (
             <Image
@@ -37,7 +37,7 @@ const Slide = () => {
             />
           ))}
         </Carrousel>
-      </div>
+      </main>
     </>
   );
 };

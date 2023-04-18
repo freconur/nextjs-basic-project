@@ -20,14 +20,14 @@ console.log('llave', process.env.FIREBASE_CONFIG_API_KEY)
 const Home = () => {
   return (
     <div>
-      <div className=''>
+      {/* <div className=''> */}
         <Slide />
           <SectionBts />
           <SectionKawaii />
           <SectionContact />
         {/* <Products products={product} /> */}
       </div>
-    </div>
+    // </div>
   )
 }
 
