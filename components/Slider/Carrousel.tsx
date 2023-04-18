@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 
 interface PropsCarrousel {
-  children: JSX.Element[],
+  children: JSX.Element[];
+  // children: Element[],
   autoSlide: boolean
 }
 const Carrousel = ({ children: slides, autoSlide = false }: PropsCarrousel) => {
@@ -26,7 +27,8 @@ const Carrousel = ({ children: slides, autoSlide = false }: PropsCarrousel) => {
             href={`/${slides[currentValue].props.alt}`}
             className="relative z-10 left-0 right-0 top-0 flex transition-transform ease-out duration-500"
             style={{ transform: `translateX(-${currentValue * 100}%)` }}
-            // prefetch={false}
+            prefetch={false}
+            // legacyBehavior={true}
           >
             {slides}
           </Link>

@@ -19,8 +19,8 @@ const Slide = () => {
               priority
               blurDataURL={imageBlur}
               placeholder="blur"
-            />
-          ))}
+              />
+              ))}
         </Carrousel>
       </main>
       <main className="hidden xs:block">
