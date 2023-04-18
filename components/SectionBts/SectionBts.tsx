@@ -12,7 +12,7 @@ const SectionBts = () => {
           productos bts
         </h1>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <div>
+          {/* <div> */}
           {/* <div className="flex items-center justify-center w-full relative"> */}
             <Image
               src={IMAGES_BTS.btsPage.section}
@@ -20,7 +20,7 @@ const SectionBts = () => {
               height={1080}
               alt="bts"
             />
-          </div>
+          {/* </div> */}
           <div className="grid place-content-center h-full">
             <p className="text-xl text-texto sm:text-xl md:text-2xl cs:text-2xl">
               {/* <p className="text-xl text-texto"> */}

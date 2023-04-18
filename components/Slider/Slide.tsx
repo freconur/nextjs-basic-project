@@ -29,7 +29,7 @@ const Slide = () => {
             <Image
               key={index}
               src={url.urlImage}
-              width={190}
+              width={1900}
               height={650}
               alt={url.name}
             />
