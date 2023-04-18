@@ -7,11 +7,12 @@ import React from "react";
 const SectionBts = () => {
   return (
     <LayoutMarginCenter>
-      <section className="w-full my-10 p-3">
-        <h1 className="text-3xl uppercase font-extrabold text-center text-cyan-600 my-6">
+      <section className="w-full my-10 p-3 grid grid-cols-1 gap-5 sm:grid-cols-2">
+        {/* <h1 className="text-3xl uppercase font-extrabold text-center text-cyan-600 my-6">
           productos bts
-        </h1>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        </h1> */}
+        {/* <div className=""> */}
+        {/* <div className="grid grid-cols-1 gap-5 sm:grid-cols-2"> */}
           {/* <div> */}
           {/* <div className="flex items-center justify-center w-full relative"> */}
             <Image
@@ -19,6 +20,8 @@ const SectionBts = () => {
               width={1080}
               height={1080}
               alt="bts"
+              priority={true}
+              
             />
           {/* </div> */}
           <div className="grid place-content-center h-full">
@@ -37,7 +40,7 @@ const SectionBts = () => {
               </Link>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </section>
     </LayoutMarginCenter>
   );

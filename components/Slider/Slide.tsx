@@ -13,10 +13,10 @@ const Slide = () => {
             <Image
               key={index}
               src={url.urlImage}
-              width={1080}
-              height={1080}
+              width='500'
+              height='500'
               alt={url.name}
-              priority
+              // priority
               blurDataURL={imageBlur}
               placeholder="blur"
             />
@@ -32,6 +32,8 @@ const Slide = () => {
               width={1900}
               height={650}
               alt={url.name}
+              // priority
+              // placeholder="blur"
             />
           ))}
         </Carrousel>
