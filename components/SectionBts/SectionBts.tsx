@@ -1,6 +1,6 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter";
 import { IMAGES_BTS } from "ImagesLink/imagesLink";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 
@@ -21,7 +21,7 @@ const SectionBts = () => {
               height={1080}
               alt="bts"
               priority={true}
-              
+              objectFit="cover"
             />
           {/* </div> */}
           <div className="grid place-content-center h-full">
