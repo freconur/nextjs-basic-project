@@ -4,9 +4,10 @@ import { getKawaiiProducts, kawaiiProductById } from 'reducer/kawaii'
 import { GetStaticProps } from 'next'
 import SectionBts from '@components/SectionBts/SectionBts'
 import SectionKawaii from '@components/SectionKawaii/SectionKawaii'
-import SectionContact from '@components/SectionContact/SectionContact'
+// import SectionContact from '@components/SectionContact/SectionContact'
 import Slide from '@components/Slider/Slide'
 import LayoutMarginCenter from '@components/Layout/LayoutMarginCenter'
+import dynamic from 'next/dynamic'
 
 
 // export const getStaticProps: GetStaticProps = async () => {
@@ -16,15 +17,18 @@ import LayoutMarginCenter from '@components/Layout/LayoutMarginCenter'
 //     props: { product }
 //   }
 // }
-console.log('llave', process.env.FIREBASE_CONFIG_API_KEY)
+
 const Home = () => {
+  const DynamicContact = dynamic(() => import('@components/SectionContact/SectionContact'), {
+    loading: () => <p>Loading...</p>,
+  })
   return (
     <div>
       {/* <div className=''> */}
         <Slide />
           <SectionBts />
           <SectionKawaii />
-          <SectionContact />
+          <DynamicContact />
         {/* <Products products={product} /> */}
       </div>
     // </div>

@@ -11,12 +11,10 @@ const Slide = () => {
     loading: () => <p>Loading...</p>,
   })
   useEffect(() => {
-    // const handleResize = () => {
-    //   setSize(window.innerWidth);
-    // }
-    setSize(window.innerWidth);
-
-    // window.addEventListener("resize", handleResize);
+    const handleResize = () => {
+      setSize(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
   }, []);
   return (
     <>
@@ -72,7 +70,7 @@ const Slide = () => {
                   width='1900'
                   height='650'
                   alt={url.name}
-                  priority
+                  // priority
                   // blurDataURL={imageBlur}
                   // placeholder="blur"
                 />
