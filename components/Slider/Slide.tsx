@@ -4,9 +4,12 @@ import Carrousel from "./Carrousel";
 import Image from "next/image";
 import { imageBlur } from "ImagesLink/blurImage";
 import { useEffect, useState } from "react";
-
+import dynamic from 'next/dynamic'
 const Slide = () => {
   const [size, setSize] = useState<number>(0);
+  const DynamicImage = dynamic(() => import('next/image'), {
+    loading: () => <p>Loading...</p>,
+  })
   useEffect(() => {
     const handleResize = () => {
       setSize(window.innerWidth);
@@ -19,16 +22,29 @@ const Slide = () => {
         <main className="xs:hidden relative">
           <Carrousel autoSlide={true}>
             {IMAGE_SLIDER_XS.map((url, index) => (
-              <Image
-                key={index}
-                src={url.urlImage}
-                width='500'
-                height='500'
-                alt={url.name}
-                priority
-                blurDataURL={imageBlur}
-                placeholder="blur"
-              />
+              index < 0
+                ?
+                <Image
+                  key={index}
+                  src={url.urlImage}
+                  width='500'
+                  height='500'
+                  alt={url.name}
+                  priority
+                  blurDataURL={imageBlur}
+                  placeholder="blur"
+                />
+                :
+                <DynamicImage
+                  key={index}
+                  src={url.urlImage}
+                  width='500'
+                  height='500'
+                  alt={url.name}
+                  // priority
+                  blurDataURL={imageBlur}
+                  placeholder="blur"
+                />
             ))}
           </Carrousel>
         </main>

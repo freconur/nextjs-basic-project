@@ -16,7 +16,7 @@ const Carrousel = ({ children: slides, autoSlide = false }: PropsCarrousel) => {
     setCurrentValue((curr: any) => (curr === slides.length - 1 ? 0 : curr + 1));
   useEffect(() => {
     if (!autoSlide) return
-    const slideInterval = setInterval(next, 3000)
+    const slideInterval = setInterval(next, 5000)
     return () => clearInterval(slideInterval)
   }, [])
   return (

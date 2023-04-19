@@ -8,7 +8,7 @@ type Props = {
 const ProductsCard = ({ products }: Props) => {
 	return (
 		<ul className='m-3 grid grid-cols-1 gap-4 xm:grid-cols-2 md:ml-0 lg:grid-cols-3'>
-			{products?.map(item => {
+			{products?.map((item) => {
 				return (
 					<li key={item.id} className='grid grid-cols-gridCardProduct xm:block rounded-xl  bg-blanco-cool shadow-md overflow-hidden'>
 						<Image className='w-full' src={`${item.image}`} width={300} height={300} alt={`${item.name}`} />
