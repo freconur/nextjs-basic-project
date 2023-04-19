@@ -9,11 +9,8 @@ interface Props {
 }
 
 const Slider = ({ autoplay }: Props) => {
-
-  const [size, setSize] = useState<number>(0);
 	const [selectedIndex, setSelectedIndex] = useState(0)
 	const [selectedImage, setSelectedImage] = useState<string>(IMAGE_SLIDER_LOCAL_MOVIL[0])
-
 	useEffect(() => {
 		if (autoplay) {
 			const interval = setInterval(() => {
@@ -22,20 +19,11 @@ const Slider = ({ autoplay }: Props) => {
 			return () => clearInterval(interval);
 		}
 	})
-	useEffect(() => {
-    const handleResize = () => {
-      setSize(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-  }, []);
-
 	const selectImageSlider = (index: number, image: string[], next = true) => {
 		const condition = next ? selectedIndex < IMAGE_SLIDER_LOCAL_MOVIL.length - 1 : selectedIndex > 0
 		const nextIndex = next ? condition ? selectedIndex + 1 : 0 : condition ? selectedIndex - 1 : IMAGE_SLIDER_LOCAL_MOVIL.length - 1
 		setSelectedImage(IMAGE_SLIDER_LOCAL_MOVIL[nextIndex])
 		setSelectedIndex(nextIndex)
-
-
 	}
 
 	const prev = () => {

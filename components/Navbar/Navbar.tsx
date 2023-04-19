@@ -6,7 +6,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import MenuMobile from "@components/MenuMobile/MenuMobile";
 import { LOGO_WALIKY } from "ImagesLink/imagesLink";
 import Image from "next/image";
-
+import Logo from '../../assets/waliky-logo.png'
 
 function useWindowsSize() {
   const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
@@ -31,16 +31,16 @@ const Navbar = () => {
             setShowModalNavbar={setShowModalNavbar}
           />
         )}
-        <Link href="/" legacyBehavior>
+        <Link href="/">
           {/* <a className="block w-[150px]"> */}
-            <Image
-              src={LOGO_WALIKY}
-              alt="logo"
-              width={150}
-              height={50}
-              priority
-              // placeholder="blur"
-            />
+          <Image
+            src={Logo}
+            alt="logo"
+            width={120}
+            // height={50}
+            priority
+          // placeholder="blur"
+          />
         </Link>
         <ul className="text-xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
           <li className="ml-[50px] overflow-hidden rounded-full hover:shadow-xl ">
@@ -65,10 +65,10 @@ const Navbar = () => {
         {/* menu burger flotante */}
       </nav>
       {/* <div> */}
-        <RiMenuFill onClick={() => setShowModalNavbar(!showModalNavbar)}
+      <RiMenuFill onClick={() => setShowModalNavbar(!showModalNavbar)}
         className={`${showModalNavbar && "rotate-180 transition duration-300"
           } transition duration-300 fixed w-[50px] h-[50px] z-50 md:hidden rounded-[50%] bottom-5 right-5 overflow-hidden p-2 bg-blanco-cool drop-shadow-md cursor-pointer text-4xl`} />
-        {/* <RiMenuFill className="text-4xl " /> */}
+      {/* <RiMenuFill className="text-4xl " /> */}
       {/* </div> */}
 
     </>
