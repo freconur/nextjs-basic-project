@@ -8,6 +8,7 @@ import SectionKawaii from '@components/SectionKawaii/SectionKawaii'
 import Slide from '@components/Slider/Slide'
 import LayoutMarginCenter from '@components/Layout/LayoutMarginCenter'
 import dynamic from 'next/dynamic'
+import Slider from '@components/Slider/Slider'
 
 
 // export const getStaticProps: GetStaticProps = async () => {
@@ -25,7 +26,8 @@ const Home = () => {
   return (
     <div>
       {/* <div className=''> */}
-        <Slide />
+      <Slider/>
+        {/* <Slide /> */}
           <SectionBts />
           <SectionKawaii />
           <DynamicContact />

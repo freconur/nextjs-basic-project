@@ -10,7 +10,7 @@ const nextConfig = {
       },
     ],
     domains: ['firebasestorage.googleapis.com'],
-    
+    // path: `assets/slider/*`,
   },
 }
 const withBundleAnalyzer = require('@next/bundle-analyzer')({

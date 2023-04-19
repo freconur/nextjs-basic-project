@@ -45,3 +45,10 @@ export const IMAGE_SLIDER_SM = [
     name: "combosBts",
   },
 ];
+
+export const IMAGE_SLIDER_LOCAL_MOVIL = [
+  'trovo.jpg',
+  'trava.jpg',
+  'trivu.jpg'
+]
+

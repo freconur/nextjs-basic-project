@@ -18,37 +18,34 @@ const Slide = () => {
   }, []);
   return (
     <>
-      {size < 540 ?
+      {/* {size <= 540 ? */}
         <main className="xs:hidden relative">
           <Carrousel autoSlide={true}>
             {IMAGE_SLIDER_XS.map((url, index) => (
-              index < 1
-                ?
-                <Image
-                  key={index}
-                  src={url.urlImage}
-                  width='500'
-                  height='500'
-                  alt={url.name}
-                  priority
-                  blurDataURL={imageBlur}
-                  placeholder="blur"
-                />
-                :
+                // <Image
+                //   key={index}
+                //   src={url.urlImage}
+                //   width={540}
+                //   height={540}
+                //   alt={url.name}
+                //   // priority
+                //   blurDataURL={imageBlur}
+                //   placeholder="blur"
+                // />
                 <DynamicImage
                   key={index}
                   src={url.urlImage}
-                  width='500'
-                  height='500'
+                  width={540}
+                  height={540}
                   alt={url.name}
-                  priority
+                  // priority
                   blurDataURL={imageBlur}
                   placeholder="blur"
                 />
             ))}
           </Carrousel>
         </main>
-        :
+        {/* : */}
         <main className="hidden xs:block">
           <Carrousel autoSlide={true}>
             {IMAGE_SLIDER_SM.map((url, index) => (
@@ -60,7 +57,7 @@ const Slide = () => {
                 width={1900}
                 height={650}
                 alt={url.name}
-                priority
+                // priority
               // placeholder="blur"
               />
               :
@@ -77,7 +74,7 @@ const Slide = () => {
             ))}
           </Carrousel>
         </main>
-      }
+      {/* } */}
     </>
   );
 };
