@@ -7,6 +7,7 @@ import MenuMobile from "@components/MenuMobile/MenuMobile";
 import { LOGO_WALIKY } from "ImagesLink/imagesLink";
 import Image from "next/image";
 import Logo from '../../assets/waliky-logo.png'
+import { logoBlur } from "ImagesLink/blurImage";
 
 function useWindowsSize() {
   const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
@@ -38,8 +39,9 @@ const Navbar = () => {
             src={Logo}
             alt="logo"
             width={120}
+            height={45}
             priority
-            placeholder="blur"
+            blurDataURL={logoBlur}
           />
         </Link>
         <ul className="text-xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
