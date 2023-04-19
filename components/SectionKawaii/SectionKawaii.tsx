@@ -1,8 +1,8 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter";
 import { IMAGES_KAWAII } from "ImagesLink/imagesLink";
 import Image from "next/image";
-// import Image from "next/legacy/image";
 import Link from "next/link";
+import Kawaii from "../../assets/sections/kawaii.jpg"
 import React from "react";
 import {imageBlur} from "../../ImagesLink/blurImage"
 const SectionKawaii = () => {
@@ -14,7 +14,7 @@ const SectionKawaii = () => {
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 w-full relative">
         <div className="items-center justify-center w-full relative">
           <Image
-            src={IMAGES_KAWAII.kawaiiPage.low}
+            src={Kawaii}
             width={1080}
             height={1080}
             // layout="responsive"

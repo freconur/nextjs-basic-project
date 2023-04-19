@@ -4,6 +4,7 @@ import { IMAGES_BTS } from "ImagesLink/imagesLink";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
+import Bts from '../../assets/sections/bts.jpg'
 
 const SectionBts = () => {
   return (
@@ -12,7 +13,8 @@ const SectionBts = () => {
         <h1 className="text-3xl text-verde text-center uppercase font-extrabold">bts</h1>
         <div className="w-full  p-3 grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Image
-              src={IMAGES_BTS.btsPage.low}
+              src={Bts}
+              // src={IMAGES_BTS.btsPage.low}
               width={1080}
               height={1080}
               alt="bts"

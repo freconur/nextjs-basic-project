@@ -41,6 +41,7 @@ const Navbar = () => {
             width={120}
             height={45}
             priority
+            placeholder="blur"
             blurDataURL={logoBlur}
           />
         </Link>

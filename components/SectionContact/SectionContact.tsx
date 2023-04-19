@@ -5,6 +5,7 @@ import { RiFacebookCircleFill } from "react-icons/ri";
 import { RiInstagramLine } from "react-icons/ri";
 import { RiYoutubeLine } from "react-icons/ri";
 import { RiPushpin2Line } from "react-icons/ri";
+import Location from '../../assets/sections/location.jpg'
 const SectionContact = () => {
   return (
     <section className="bg-cian rounded-t-3xl py-10 px-3">
@@ -51,7 +52,7 @@ const SectionContact = () => {
             </div>
           </div>
           <div className="shadow-xl rounded-3xl overflow-hidden w-full">
-            <Image src={LOCATION_WALIKY} alt="location" width={700} height={300}/>
+            <Image src={Location} alt="location" width={700} height={300}/>
             {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3845.0364156382857!2d-70.11578248555224!3d-15.482473289245698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9167f33a510ceb4d%3A0x513479db1ab4c863!2swaliky%20store%20juliaca!5e0!3m2!1ses-419!2spe!4v1680830047266!5m2!1ses-419!2spe"
               // width="300"
