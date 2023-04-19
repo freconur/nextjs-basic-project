@@ -34,12 +34,12 @@ const Navbar = () => {
         <Link href="/">
           {/* <a className="block w-[150px]"> */}
           <Image
+            className="w-[150px]"
             src={Logo}
             alt="logo"
             width={120}
-            // height={50}
             priority
-          // placeholder="blur"
+            placeholder="blur"
           />
         </Link>
         <ul className="text-xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
