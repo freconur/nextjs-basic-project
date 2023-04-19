@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <div>
       {/* <div className=''> */}
-      <Slider/>
+      <Slider autoplay={true}/>
         {/* <Slide /> */}
           <SectionBts />
           <SectionKawaii />

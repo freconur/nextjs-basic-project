@@ -47,8 +47,8 @@ export const IMAGE_SLIDER_SM = [
 ];
 
 export const IMAGE_SLIDER_LOCAL_MOVIL = [
-  'trovo.jpg',
-  'trava.jpg',
-  'trivu.jpg'
+  'tazasSublimadas',
+  'biombos',
+  'combosBts'
 ]
 
