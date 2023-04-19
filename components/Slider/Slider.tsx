@@ -10,6 +10,7 @@ interface Props {
 
 const Slider = ({ autoplay }: Props) => {
 
+  const [size, setSize] = useState<number>(0);
 	const [selectedIndex, setSelectedIndex] = useState(0)
 	const [selectedImage, setSelectedImage] = useState<string>(IMAGE_SLIDER_LOCAL_MOVIL[0])
 
@@ -21,6 +22,13 @@ const Slider = ({ autoplay }: Props) => {
 			return () => clearInterval(interval);
 		}
 	})
+	useEffect(() => {
+    const handleResize = () => {
+      setSize(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+  }, []);
+
 	const selectImageSlider = (index: number, image: string[], next = true) => {
 		const condition = next ? selectedIndex < IMAGE_SLIDER_LOCAL_MOVIL.length - 1 : selectedIndex > 0
 		const nextIndex = next ? condition ? selectedIndex + 1 : 0 : condition ? selectedIndex - 1 : IMAGE_SLIDER_LOCAL_MOVIL.length - 1
@@ -44,8 +52,19 @@ const Slider = ({ autoplay }: Props) => {
 
 			<Link href={`${selectedImage}`} className="relative z-10 left-0 right-0 top-0 flex transition-transform ease-out duration-500" prefetch={false}>
 				<Image
+				className='sm:hidden'
 					src={require(`assets/slider/${selectedImage}.jpg`).default}
+					// src={require(`assets/slider-web/biombos.jpg`).default}
 					alt={selectedImage}
+					width={640}
+					priority
+				/>
+				<Image
+				className='hidden sm:block'
+					src={require(`assets/slider-web/${selectedImage}.jpg`).default}
+					// src={require(`assets/slider-web/biombos.jpg`).default}
+					alt={selectedImage}
+					width={2140}
 					priority
 				/>
 				{/* <img src={require(`assets/slider/${selectedImage}`).default.src} alt="" /> */}
