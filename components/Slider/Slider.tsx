@@ -42,7 +42,7 @@ const Slider = ({ autoplay }: Props) => {
 		<>
 		<div className='relative'>
 
-			<Link href={`${selectedImage}`} className="relative z-10 left-0 right-0 top-0 flex transition-transform ease-out duration-500">
+			<Link href={`${selectedImage}`} className="relative z-10 left-0 right-0 top-0 flex transition-transform ease-out duration-500" prefetch={false}>
 				<Image
 					src={require(`assets/slider/${selectedImage}.jpg`).default}
 					alt={selectedImage}
