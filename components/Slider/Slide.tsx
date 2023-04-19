@@ -11,10 +11,12 @@ const Slide = () => {
     loading: () => <p>Loading...</p>,
   })
   useEffect(() => {
-    const handleResize = () => {
-      setSize(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
+    // const handleResize = () => {
+    //   setSize(window.innerWidth);
+    // }
+    setSize(window.innerWidth);
+
+    // window.addEventListener("resize", handleResize);
   }, []);
   return (
     <>
@@ -22,7 +24,7 @@ const Slide = () => {
         <main className="xs:hidden relative">
           <Carrousel autoSlide={true}>
             {IMAGE_SLIDER_XS.map((url, index) => (
-              index < 0
+              index < 1
                 ?
                 <Image
                   key={index}
@@ -41,7 +43,7 @@ const Slide = () => {
                   width='500'
                   height='500'
                   alt={url.name}
-                  // priority
+                  priority
                   blurDataURL={imageBlur}
                   placeholder="blur"
                 />
@@ -52,6 +54,8 @@ const Slide = () => {
         <main className="hidden xs:block">
           <Carrousel autoSlide={true}>
             {IMAGE_SLIDER_SM.map((url, index) => (
+              index < 1 
+              ?
               <Image
                 key={index}
                 src={url.urlImage}
@@ -61,6 +65,17 @@ const Slide = () => {
                 priority
               // placeholder="blur"
               />
+              :
+              <DynamicImage
+                  key={index}
+                  src={url.urlImage}
+                  width='1900'
+                  height='650'
+                  alt={url.name}
+                  priority
+                  // blurDataURL={imageBlur}
+                  // placeholder="blur"
+                />
             ))}
           </Carrousel>
         </main>
