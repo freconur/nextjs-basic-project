@@ -18,8 +18,8 @@ const Bts = () => {
   return (
     <div>
       <div className="w-full">
-        <Image className="w-full sm:hidden" src={BtsHeaderMobil} alt="bts" width={2140} priority/>
-        <Image className="w-full hidden sm:block" src={BtsHeaderWeb} alt="bts" priority />
+        <Image className="w-full sm:hidden" src={BtsHeaderMobil} alt="bts" width={2140} priority placeholder="blur" />
+        <Image className="w-full hidden sm:block" src={BtsHeaderWeb} alt="bts" priority placeholder="blur" />
       </div>
       <LayoutMarginCenter>
         <h3 className="text-gray-500 text-center font-medium tracking-wide text-3xl capitalize my-10 mx-5">Porque Sabemos Que Eres Fan De BTS Hemos Decidido Abrir Una Tienda Especial Para Todos Los Army</h3>
