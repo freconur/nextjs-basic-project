@@ -2,10 +2,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import NavbarModal from "../modal/NavbarModal";
 import { RiMenuFill } from "react-icons/ri";
-import { RiArrowDropDownLine } from "react-icons/ri";
-import MenuMobile from "@components/MenuMobile/MenuMobile";
-import { LOGO_WALIKY } from "ImagesLink/imagesLink";
 import Image from "next/image";
+import styles from '../../styles/Navbar.module.css'
 import Logo from '../../assets/waliky-logo.png'
 import { logoBlur } from "ImagesLink/blurImage";
 
@@ -33,7 +31,6 @@ const Navbar = () => {
           />
         )}
         <Link href="/">
-          {/* <a className="block w-[150px]"> */}
           <Image
             className="w-[150px]"
             src={Logo}
@@ -45,8 +42,26 @@ const Navbar = () => {
             blurDataURL={logoBlur}
           />
         </Link>
-        <ul className="text-xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
-          <li className="ml-[50px] overflow-hidden rounded-full hover:shadow-xl ">
+        <div className={styles.navbar}>
+          {/* dropdown */}
+          <div className={styles.dropdown}>
+            <button className={styles.link}>productos</button>
+            {/* dropdown content */}
+            <div className={styles.dropdownMenu}>
+              <Link href="/" className="block w-full text-center h-full p-2">bts</Link>
+              <Link href="/" className="block w-full text-center h-full p-2">kawaii</Link>
+              <Link href="/" className="block w-full text-center h-full p-2">biombos</Link>
+            </div>
+          </div>
+          <div className={styles.dropdown}>
+            <button className={styles.link}>contactanos</button>
+          </div>
+          <div className={styles.dropdown}>
+            <button className={styles.link}>nosotros</button>
+          </div>
+        </div>
+        {/* <ul className="text-xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
+          <li className="ml-[50px] overflow-hidden rounded-full hover:shadow-xl">
             <Link href="/" legacyBehavior>
               <a className="flex items-center justify-center leading-[50px] duration-500 transition ease-out  pl-4 pr-1 border-0  hover:bg-verde hover:rounded-full hover:h-full hover:w-full">
                 productos
@@ -64,7 +79,7 @@ const Navbar = () => {
               <a className="block leading-[50px] duration-500 transition ease-out px-4 border-0  hover:bg-verde hover:rounded-full hover:h-full hover:w-full">contactanos</a>
             </Link>
           </li>
-        </ul>
+        </ul> */}
         {/* menu burger flotante */}
       </nav>
       {/* <div> */}
