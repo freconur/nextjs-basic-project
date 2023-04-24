@@ -48,9 +48,9 @@ const Navbar = () => {
             <button className={styles.link}>productos</button>
             {/* dropdown content */}
             <div className={styles.dropdownMenu}>
-              <Link href="/" className="block w-full text-center h-full p-2">bts</Link>
-              <Link href="/" className="block w-full text-center h-full p-2">kawaii</Link>
-              <Link href="/" className="block w-full text-center h-full p-2">biombos</Link>
+              <Link href="/bts" className="block w-full text-center h-full p-2 hover:bg-violet-300 hover:text-white transition duration-300 ease-in-out capitalize font-semibold text-lg text-texto-title" >bts</Link>
+              <Link href="/kawaii" className="block w-full text-center h-full p-2 hover:bg-violet-300 hover:text-white transition duration-300 ease-in-out capitalize font-semibold text-lg text-texto-title">kawaii</Link>
+              <Link href="/biombos" className="block w-full text-center h-full p-2 hover:bg-violet-300 hover:text-white transition duration-300 ease-in-out capitalize font-semibold text-lg text-texto-title">biombos</Link>
             </div>
           </div>
           <div className={styles.dropdown}>

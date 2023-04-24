@@ -1,12 +1,22 @@
 interface Kawaii {
-  category?: string;
   id?: string;
+  category?: string;
   image?: string;
   marca?: string;
   name?: string;
   price?: string;
   state?: boolean;
   stock?: string;
+  subcategory?: string;
+
+  id?: string
+  category?: string
+  image?: string
+  marca?: string
+  name?: string
+  price?: string
+  state?: boolean
+  stock?: number
   subcategory?: string;
 }
 declare module "*.png" {
@@ -30,6 +40,8 @@ interface Products {
   price?: string
   state?: boolean
   stock?: number
+  subcategory?: string;
+
 }
 interface Biombos {
   id?: string

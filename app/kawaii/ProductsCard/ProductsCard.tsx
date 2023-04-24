@@ -25,7 +25,7 @@ const ProductsCard = ({ products }: Props) => {
 								<p className='text-md'>S/{item.price}</p>
 								<div className='w-10 h-6 text-center leading-[20px] bg-fuxia rounded-md text-blanco-cool font-medium text-lg shadow-sm'><span>ver</span></div>
 							</div>
-							<Link href={`${item.id}`} className='bg-blue-200'>prubando</Link>
+							<Link href={`/kawaii/${item.id}`} className='bg-blue-200'>prubando</Link>
 						</div>
 					</li>
 				)

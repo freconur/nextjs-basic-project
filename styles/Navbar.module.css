@@ -21,6 +21,8 @@
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     transform:translateY(-10px);
     border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
 }
 .link:hover {
     background-color: #00b19f;
