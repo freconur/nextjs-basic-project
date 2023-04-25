@@ -17,13 +17,15 @@ const ProductsCard = ({ products }: Props) => {
 							<h4 className='text-texto-title text-md font-semibold uppercase'>
 								{item.marca}
 							</h4>
-							<h3 className='text-md font-medium capitalize'>
+							<h3 className='text-md font-medium capitalize text-texto-title'>
 								{item.name}
 							</h3>
-							<div className='flex justify-between'>
-								<p className='text-md'>S/{item.price}</p>
-								<div className='w-10 h-6 text-center leading-[20px] bg-fuxia rounded-md text-blanco-cool font-medium text-lg shadow-sm'><span>ver</span></div>
-							</div>
+							{item.price &&
+								<div className='flex justify-between'>
+									<p className='text-md'>S/{item.price}</p>
+									<div className='w-10 h-6 text-center leading-[20px] bg-fuxia rounded-md text-blanco-cool font-medium text-lg shadow-sm'><span>ver</span></div>
+								</div>
+							}
 						</div>
 					</li>
 				)

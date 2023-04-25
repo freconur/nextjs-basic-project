@@ -42,24 +42,27 @@ const Navbar = () => {
             blurDataURL={logoBlur}
           />
         </Link>
-        <div className={styles.navbar}>
-          {/* dropdown */}
-          <div className={styles.dropdown}>
-            <button className={styles.link}>productos</button>
-            {/* dropdown content */}
-            <div className={styles.dropdownMenu}>
-              <Link href="/" className="block w-full text-center h-full p-2">bts</Link>
-              <Link href="/" className="block w-full text-center h-full p-2">kawaii</Link>
-              <Link href="/" className="block w-full text-center h-full p-2">biombos</Link>
+        { width > 768 &&
+          <div className={styles.navbar}>
+            {/* dropdown */}
+            <div className={styles.dropdown}>
+              <button className={styles.link}>productos</button>
+              {/* dropdown content */}
+              <div className={styles.dropdownMenu}>
+                <Link href="/" className="block w-full text-center h-full p-2">bts</Link>
+                <Link href="/" className="block w-full text-center h-full p-2">kawaii</Link>
+                <Link href="/" className="block w-full text-center h-full p-2">biombos</Link>
+              </div>
+            </div>
+            <div className={styles.dropdown}>
+              <button className={styles.link}>contactanos</button>
+            </div>
+            <div className={styles.dropdown}>
+              <button className={styles.link}>nosotros</button>
             </div>
           </div>
-          <div className={styles.dropdown}>
-            <button className={styles.link}>contactanos</button>
-          </div>
-          <div className={styles.dropdown}>
-            <button className={styles.link}>nosotros</button>
-          </div>
-        </div>
+        }
+
         {/* <ul className="text-xl hidden text-blanco-cool capitalize font-semibold md:flex gap-[20px]">
           <li className="ml-[50px] overflow-hidden rounded-full hover:shadow-xl">
             <Link href="/" legacyBehavior>
