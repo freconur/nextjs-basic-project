@@ -11,11 +11,10 @@ const TazasSublimadas = () => {
 				<div className="mt-10">
 					<div className="text-center">
 						<h1 className="capitalize text-4xl text-texto font-bold">
-							cilindros y biombos para fiestas
+							tazas sublimadas personzalidas y disenos
 						</h1>
 						<p className="text-2xl text-texto-title my-5">
-							Reserva tus ciclindros y biombos para tu fiesta a unos precios
-							increibles, echale un ojo a nuestras tematicas disponibles.
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda accusamus maxime natus sint corporis ut iste, fugit delectus itaque dolor vero cumque iusto aut, quo magni ex amet enim mollitia?
 						</p>
 					</div>
 					<ul className="grid grid-cols-1 gap-5 my-10 mx-5 sm:grid-cols-2">
