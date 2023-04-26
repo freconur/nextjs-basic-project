@@ -1,6 +1,7 @@
 import LayoutMarginCenter from "@components/Layout/LayoutMarginCenter"
 import { GetStaticPaths, GetStaticProps } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { getTazaPersonzalidaById, getTazasPersonzalidas } from "reducer/TazasPersonalizadas"
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -23,7 +24,7 @@ const DetailsTazasPersonalizadas = ({ product }: { product: Products }) => {
         <LayoutMarginCenter>
             <div className='grid grid-cols-1 p-10 gap-10 sm:grid-cols-2'>
                 {/* <div className='overflow-hidden rounded-lg'> */}
-                    <Image className="rounded-lg" src={`${product.image}`} alt={`${product.name}`} width={150} height={150} layout="responsive" />
+                <Image className="rounded-lg" src={`${product.image}`} alt={`${product.name}`} width={150} height={150} layout="responsive" />
                 {/* </div> */}
 
                 <div>
@@ -43,9 +44,9 @@ const DetailsTazasPersonalizadas = ({ product }: { product: Products }) => {
                     <div className='flex justify-between'>
                         <span className='text-texto-title font-semibold text-xl capitalize'>precio:</span>
                         <span className='text-texto-title text-xl font-semibold'>S/{product.price}</span>
-                        <a className="bg-yellow-400 p-2 rounded-sm" href="https://wa.me/p/5965356190211100/51936263748">
-                          comprar
-                        </a>
+                        <Link className="bg-yellow-400 p-2 rounded-sm" href="https://wa.me/p/5965356190211100/51936263748">
+                            comprar
+                        </Link>
                         {/* <button></button> */}
                     </div>
                 </div>
