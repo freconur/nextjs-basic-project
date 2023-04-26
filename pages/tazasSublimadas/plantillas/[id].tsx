@@ -43,6 +43,10 @@ const DetailsTazasPersonalizadas = ({ product }: { product: Products }) => {
                     <div className='flex justify-between'>
                         <span className='text-texto-title font-semibold text-xl capitalize'>precio:</span>
                         <span className='text-texto-title text-xl font-semibold'>S/{product.price}</span>
+                        <a className="bg-yellow-400 p-2 rounded-sm" href="https://wa.me/p/5965356190211100/51936263748">
+                          comprar
+                        </a>
+                        {/* <button></button> */}
                     </div>
                 </div>
             </div>
