@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { kawaiiProductById } from "reducer/kawaii"
 import { getKawaiiProducts } from "reducer/kawaii"
 
@@ -24,6 +25,7 @@ const KawaiiDetail = ({ product }: { product: Kawaii }) => {
         <div>
             <h1>Detalle de kawaii {product?.name} </h1>
             <Image alt={`${product.name}`} src={`${product.image}`} width={500} height={500} />
+            <Link href="" className="p-3 bg-yellow-400 rounded-sm">comprar</Link>
         </div>
     )
 }
