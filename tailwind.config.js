@@ -40,7 +40,7 @@ module.exports = {
         'footer':'rgb(34,34,34)',
         'azulClaro': '#dbeafe',
         'azulOscuro': '#93c5fd',
-        
+        'whatsapp-claro':'#25D366'
       },
         gridTemplateRows: {
           // Complex site-specific row configuration

@@ -27,6 +27,14 @@ export const getTazasBts = async() => {
   });
   return tazas
 };
+export const getTazasBtsById = async (id: string) => {
+  const docRef = doc(db, "bts/etkmO3TrV2WqzKwVGQQO/tazas", `${id}`);
+  const docSnap = await getDoc(docRef);
+  const rta = docSnap.data()
+  if (docSnap.exists()) {
+    return rta;
+  }
+}
 export const getPosterBts = async() => {
   const rta = await getDocs(collection(db, "bts/Fwh0KuBTK4P5xmzJB8j2/poster"));
   const poster: Products[] = [];

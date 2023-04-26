@@ -8,6 +8,8 @@ interface Kawaii {
   state?: boolean;
   stock?: string;
   subcategory?: string;
+  description?:string;
+  linkToBuy?:string
 }
 declare module "*.png" {
   const value: any;
@@ -31,6 +33,7 @@ interface Products {
   state?: boolean
   stock?: number
   description?:string
+  linkToBuy?:string
 }
 interface Biombos {
   id?: string
