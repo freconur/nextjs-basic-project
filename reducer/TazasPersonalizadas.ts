@@ -21,8 +21,8 @@ export const getTazasPersonzalidas = async () => {
   });
   return tazasPersonzalidas;
 };
-export const kawaiiProductById = async (id: string) => {
-  const docRef = doc(db, "kawaii", `${id}`);
+export const getTazaPersonzalidaById = async (id: string) => {
+  const docRef = doc(db, "/sublimados/ZaOy0E2r1eCAakrdHw4L/tazas", `${id}`);
   const docSnap = await getDoc(docRef);
   const rta = docSnap.data();
   if (docSnap.exists()) {

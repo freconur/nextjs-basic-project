@@ -20,7 +20,7 @@ const plantillas = ({ products }: { products: Products[] }) => {
         <p className='text-texto-title text-xl text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptate nisi ullam iste quidem tempora libero reiciendis minima, cum asperiores iusto, est rerum ducimus voluptas cupiditate quis in alias suscipit.</p>
       </div>
       <div>
-        <ProductsCard products={products} />
+        <ProductsCard products={products} currentPage={"plantillas"} />
       </div>
     </LayoutTazasSublimadas>
   )

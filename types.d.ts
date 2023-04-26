@@ -30,6 +30,7 @@ interface Products {
   price?: string
   state?: boolean
   stock?: number
+  description?:string
 }
 interface Biombos {
   id?: string
