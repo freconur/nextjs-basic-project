@@ -4,7 +4,7 @@ import Image from "next/image"
 import { getTazaPersonzalidaById, getTazasPersonzalidas } from "reducer/TazasPersonalizadas"
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const product: Biombos[] = await getTazasPersonzalidas()
+    const product: Products[] = await getTazasPersonzalidas()
     const paths = product.map(({ id }) => ({ params: { id } }))
     return {
         paths,

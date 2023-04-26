@@ -17,7 +17,7 @@ const kawaii = ({ product }: { product: Products[] }) => {
         <LayoutKawaii>
             <div className='text-gray-500'>
 
-                <ProductsCard products={product} />
+                <ProductsCard products={product} currentPage={"kawaii"}/>
             </div>
         </LayoutKawaii>
     )
