@@ -109,7 +109,7 @@ export const getCojinesMidBts = async() => {
   return cojinesMid
 };
 export const getCojinesMidById = async (id: string) => {
-  const docRef = doc(db, "bts/Xq9UGyUn6d4OukEb1jPk/cartucheras", `${id}`);
+  const docRef = doc(db, "bts/M399N3OWcQXBvyIPkz0H/cojinesMid", `${id}`);
   const docSnap = await getDoc(docRef);
   const rta = docSnap.data()
   if (docSnap.exists()) {
