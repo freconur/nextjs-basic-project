@@ -18,7 +18,7 @@ const MediasBts = ({product}: {product:Products[]}) => {
         <h1 className='text-2xl font-semibold text-verde uppercase my-5 ml-3 text-left'>medias</h1>
         {
           product &&
-          <ProductsCard products={product} />
+          <ProductsCard products={product} currentPage={"medias"}/>
         }
       </div>
     </LayoutBts>

@@ -20,7 +20,7 @@ const [state, dispatch] = useReducer(ProductsReducer,productInitialState)
       <h1 className='text-2xl font-semibold text-verde uppercase my-5 ml-3 text-left'>polos</h1>
         {
           product &&
-        <ProductsCard products={product} />
+        <ProductsCard products={product} currentPage={"polos"}/>
         }
       </div>
     </LayoutBts>

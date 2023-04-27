@@ -43,6 +43,14 @@ export const getPosterBts = async() => {
   });
   return poster
 };
+export const getPosterBtsById = async (id: string) => {
+  const docRef = doc(db, "bts/Fwh0KuBTK4P5xmzJB8j2/poster", `${id}`);
+  const docSnap = await getDoc(docRef);
+  const rta = docSnap.data()
+  if (docSnap.exists()) {
+    return rta;
+  }
+}
 export const getLibretasBts = async() => {
   const rta = await getDocs(collection(db, "bts/GEhNFGq9WCuKdxZxzF35/libretas"));
   const libretas: Products[] = [];
@@ -51,6 +59,14 @@ export const getLibretasBts = async() => {
   });
   return libretas
 };
+export const getLibretasBtsById = async (id: string) => {
+  const docRef = doc(db, "bts/GEhNFGq9WCuKdxZxzF35/libretas", `${id}`);
+  const docSnap = await getDoc(docRef);
+  const rta = docSnap.data()
+  if (docSnap.exists()) {
+    return rta;
+  }
+}
 export const getCojinesBts = async() => {
   const rta = await getDocs(collection(db, "bts/G91fJSTIGxPbP6YWAr4r/cojines"));
   const cojines: Products[] = [];
@@ -59,6 +75,14 @@ export const getCojinesBts = async() => {
   });
   return cojines
 };
+export const getCojinesById = async (id: string) => {
+  const docRef = doc(db, "bts/G91fJSTIGxPbP6YWAr4r/cojines", `${id}`);
+  const docSnap = await getDoc(docRef);
+  const rta = docSnap.data()
+  if (docSnap.exists()) {
+    return rta;
+  }
+}
 // export const getCartucherasBts = (dispatch: (action: any) => void) => {
   export const getCartucherasBts = async() => {
     const rta = await getDocs(collection(db, "bts/Xq9UGyUn6d4OukEb1jPk/cartucheras"));
@@ -68,6 +92,14 @@ export const getCojinesBts = async() => {
     });
     return cartucheras
 };
+export const getCartucherasById = async (id: string) => {
+  const docRef = doc(db, "bts/Xq9UGyUn6d4OukEb1jPk/cartucheras", `${id}`);
+  const docSnap = await getDoc(docRef);
+  const rta = docSnap.data()
+  if (docSnap.exists()) {
+    return rta;
+  }
+}
 export const getCojinesMidBts = async() => {
   const rta = await getDocs(collection(db, "bts/M399N3OWcQXBvyIPkz0H/cojinesMid"));
   const cojinesMid: Products[] = [];
@@ -76,6 +108,14 @@ export const getCojinesMidBts = async() => {
   });
   return cojinesMid
 };
+export const getCojinesMidById = async (id: string) => {
+  const docRef = doc(db, "bts/Xq9UGyUn6d4OukEb1jPk/cartucheras", `${id}`);
+  const docSnap = await getDoc(docRef);
+  const rta = docSnap.data()
+  if (docSnap.exists()) {
+    return rta;
+  }
+}
 export const getPolosBts = async() => {
   const rta = await getDocs(collection(db, "bts/n8rVgfULKHbGhFTMWv3Z/polos"));
   const polos: Products[] = [];
@@ -84,6 +124,14 @@ export const getPolosBts = async() => {
   });
   return polos
 };
+export const getPolosById = async (id: string) => {
+  const docRef = doc(db, "bts/n8rVgfULKHbGhFTMWv3Z/polos", `${id}`);
+  const docSnap = await getDoc(docRef);
+  const rta = docSnap.data()
+  if (docSnap.exists()) {
+    return rta;
+  }
+}
 export const getMediasBts = async() => {
   const rta = await getDocs(collection(db, "bts/vHq1CjFvewCAZ038ICp9/medias"));
   const medias: Products[] = [];
@@ -92,6 +140,14 @@ export const getMediasBts = async() => {
   });
   return medias
 };
+export const getMediasById = async (id: string) => {
+  const docRef = doc(db, "bts/vHq1CjFvewCAZ038ICp9/medias", `${id}`);
+  const docSnap = await getDoc(docRef);
+  const rta = docSnap.data()
+  if (docSnap.exists()) {
+    return rta;
+  }
+}
 export const getBtsCombos = async () => {
   const getCombos = await getDocs(collection(db, "combosbts"));
   const combosBts:CombosBts[] = [];
@@ -100,3 +156,4 @@ export const getBtsCombos = async () => {
   });
   return combosBts;
 };
+

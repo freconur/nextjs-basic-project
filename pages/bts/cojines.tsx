@@ -18,7 +18,7 @@ const CojinesBts = ({product}: {product:Products[]}) => {
       <div className='text-gray-500'>
         {
           product &&
-        <ProductsCard products={product} />
+        <ProductsCard products={product} currentPage={"cojines"} />
         }
       </div>
     </LayoutBts>
