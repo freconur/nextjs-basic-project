@@ -11,7 +11,7 @@ type Props = {
 const ProductsCard = ({ products, currentPage, items }: Props) => {
 	// const showProduct = items && products?.splice(1, items)
 	return (
-		<ul className='m-3 grid grid-cols-1 gap-4 xm:grid-cols-2 md:ml-0 lg:grid-cols-3'>
+		<ul className='m-3 grid grid-cols-1 gap-4 xm:grid-cols-2 md:ml-0 lg:grid-cols-4'>
 			{items ?
 				products?.slice(0, items).map((item) => {
 					return (
