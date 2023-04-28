@@ -2,6 +2,7 @@ import SectionBts from '@components/SectionBts/SectionBts'
 import SectionKawaii from '@components/SectionKawaii/SectionKawaii'
 import dynamic from 'next/dynamic'
 import Slider from '@components/Slider/Slider'
+import Head from 'next/head'
 
 
 // export const getStaticProps: GetStaticProps = async () => {
@@ -18,6 +19,10 @@ const Home = () => {
   })
   return (
     <div>
+      <Head>
+        <title>Waliky store</title>
+        <meta name="description" content="custom cup description"/>
+      </Head>
       {/* <div className=''> */}
       <Slider autoplay={true}/>
         {/* <Slide /> */}
