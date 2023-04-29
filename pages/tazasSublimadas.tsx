@@ -20,7 +20,7 @@ const TazasSublimadas = () => {
 					<ul className="grid grid-cols-1 gap-5 my-10 mx-5 sm:grid-cols-2">
 
 						<li className="overflow-hidden rounded-lg bg-blanco-cool shadow-xl tematicas-disponibles__item">
-							<Link href="/tazasSublimadas/plantillas">
+							<Link href="/tazasSublimadas/tazas-personalizadas">
 								<Image
 									layout="responsive"
 									src={`${TAZAS_SUBLIMADOS.personalizados.url}`}
