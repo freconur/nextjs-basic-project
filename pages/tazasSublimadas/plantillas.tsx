@@ -15,6 +15,29 @@ export const getServerSideProps: GetStaticProps = async () => {
 }
 
 const plantillas = ({ products }: { products: Products[] }) => {
+  const jsonLd = {
+    "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Tazas Personalizadas",
+      "description": "Tazas personalizadas para regalo, eventos y para tu marca con diseños personalizados y unicos que te haran diferenciarte de los demas.",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 4,
+          "bestRating": 5
+        },
+        // "author": {
+        //   "@type": "Person",
+        //   "name": "Fred Benson"
+        // }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.4,
+        "reviewCount": 89
+      }
+  };
   return (
     <>
     <Head>
@@ -22,6 +45,10 @@ const plantillas = ({ products }: { products: Products[] }) => {
         <meta name="description" content="Encuentra el regalo perfecto y la herramienta perfecta para el merchandising para tu marca con diseños personalizados y unicos que te haran..."/>
       </Head>
     <LayoutTazasSublimadas>
+    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className='p-5'>
         <h1 className='text-verde capitalize font-semibold text-center mb-5 md: text-4xl'>Tazas Personalizadas: El detalle que te conecta con tus momentos más especiales</h1>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
