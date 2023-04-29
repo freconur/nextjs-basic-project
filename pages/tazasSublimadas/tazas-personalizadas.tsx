@@ -27,10 +27,10 @@ const plantillas = ({ products }: { products: Products[] }) => {
           "ratingValue": 4,
           "bestRating": 5
         },
-        // "author": {
-        //   "@type": "Person",
-        //   "name": "Fred Benson"
-        // }
+        "author": {
+          "@type": "Person",
+          "name": "Franco Condori"
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
