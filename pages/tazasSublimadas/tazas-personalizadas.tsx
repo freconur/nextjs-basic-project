@@ -58,7 +58,7 @@ const plantillas = ({ products }: { products: Products[] }) => {
       </div>
       <div className='p-5'>
         <h3 className='text-texto-title text-xl font-semibold my-5'>Aqui te mostramos algunos de nuestros trabajos en tazas personalizadas:</h3>
-        <ProductsCard products={products} currentPage={"plantillas"} items={4} />
+        <ProductsCard products={products} currentPage={"tazas-personalizadas"} items={4} />
         <h2 className='text-texto-title text-2xl font-semibold my-5 capitalize'>características de las Tazas Personalizadas</h2>
         <ol className='list-disc w-full text-texto-title text-xl ml-5'>
           <li><h2 className='font-bold'>Diseño personalizado:</h2> Una opción única para expresar tu estilo y personalidad.</li>
